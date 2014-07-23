@@ -1,0 +1,26 @@
+.section-header {
+  background-color: @header-bg;
+  padding: @header-padding;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+
+  .header-links {
+    .header-link {
+      display: inline;
+
+      a {
+        color: @header-link-color;
+        padding: @header-link-padding;
+        text-decoration: none;
+        font-size: bold;
+        text-transform: uppercase;
+        .transition(color @transition-duration);
+
+        &:hover {
+          color: @header-link-color-hover;
+        }
+      }
+    }
+  }
+}

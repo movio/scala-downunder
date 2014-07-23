@@ -1,0 +1,10 @@
+- day: Friday September 5, 2014
+  sessions:
+    - from: 8em
+      to: 9am
+      tracks:
+        - name: Registration Open
+    - from: 12pm
+      to: 1pm
+      tracks:
+        - name: Lunch

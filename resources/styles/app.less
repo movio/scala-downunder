@@ -1,0 +1,110 @@
+@import "bootstrap/less/normalize";
+@import "bootstrap/less/mixins";
+
+@import "flexbox";
+@import "global";
+@import "banner";
+@import "footer";
+@import "header";
+@import "location";
+@import "logo";
+@import "schedule";
+@import "speakers";
+@import "sponsors";
+@import "welcome";
+
+// Variables
+@blue: #23BDC5;
+@blue-dark: #0F3659;
+@red: #F05938;
+
+@gray-white: #F1F1F1;
+@gray-light: #4F4F4F;
+@gray: #666666;
+@gray-dark: #353535;
+
+@transition-duration: 300ms;
+
+// GLOBAL
+@color: #888;
+@container-max-width: 800px;
+
+// HEADER
+@header-bg: #333;
+@header-padding: 20px;
+@header-link-padding: 10px;
+@header-link-color: #666;
+@header-link-color-hover: @red;
+
+// LOGO
+@logo-min-height: 300px;
+
+// RED BANNER
+@banner-bg: @red;
+@banner-color: #FFF;
+
+// WELCOME
+@welcome-title-color: @red;
+@welcome-booking-bg: #DDD;
+@welcome-booking-color: @color;
+@welcome-booking-color-alt: @red;
+@welcome-booking-padding: 20px;
+@welcome-register-border: 2px solid @red;
+@welcome-register-padding: 20px;
+
+// SPEAKERS
+@speakers-bg: @blue;
+@speakers-color: #fff;
+@speakers-padding: 1rem; // Left and right padding
+@speakers-name-color: @blue-dark;
+@speakers-name-font-size: 1em;
+@speakers-name-padding: 5px;
+@speakers-role-color: #fff;
+@speakers-role-font-size: .5em;
+@speakers-role-padding: 0;
+@speakers-description-color: #fff;
+@speakers-description-font-size: .8em;
+@speakers-description-padding: 1rem;
+@speaker-photo-border: 5px solid #fff;
+
+// SCHEDULE
+@schedule-title-color: @red;
+@schedule-day-color: @blue;
+@schedule-day-padding: 1rem;
+
+@schedule-session-bottom: 4rem;
+@schedule-session-time-bottom: 5px;
+
+@schedule-guideline-width: 100px;
+@schedule-guideline-ray-width: 2px;
+@schedule-guideline-ray-color: @gray-white;
+@schedule-guideline-ray-left: ((@schedule-guideline-width - @schedule-guideline-ray-width) / 2);
+@schedule-guideline-circle-size: 30px;
+@schedule-guideline-circle-border: 3px solid @blue;
+@schedule-guideline-circle-bg: #fff;
+@schedule-guideline-circle-left: ((@schedule-guideline-width - @schedule-guideline-circle-size) / 2);
+
+// SCHEDULE - TRACK
+@track-bottom: 1rem;
+@track-name-color: @blue;
+@track-name-bottom: 5px;
+@track-speaker-color: @blue-dark;
+
+// LOCATION
+@location-venue-bg: @blue;
+@location-venue-color: @gray-white;
+@location-hotel-bg: @red;
+@location-hotel-color: @gray-white;
+
+// SPONSORS
+@sponsors-title-color: @red;
+@sponsors-padding: 1rem;
+
+// RESPONSIVE
+@screen-xs-min:                  480px;
+@screen-sm-min:                  768px;
+@screen-md-min:                  992px;
+@screen-lg-min:                  1200px;
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);

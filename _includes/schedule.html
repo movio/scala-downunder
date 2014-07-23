@@ -1,0 +1,35 @@
+<section class="section-schedule">
+  <h2>Schedule</h2>
+
+  <ol class="schedule container">
+    {% for schedule in site.data.schedule %}
+      <li class="schedule-day">
+        <div class="day">{{ schedule.day }}</div>
+        <ol class="sessions">
+          {% for session in schedule.sessions %}
+            <li class="session">
+              <div class="time">{{session.from}} - {{session.to}}</div>
+              <ul class="tracks">
+                {% for track in session.tracks %}
+                  <li class="track">
+                    <div class="track-name">{{track.name}}</div>
+                    <ul class="track-speakers">
+                      {% for speaker in track.speakers %}
+                        <li class="track-speaker">
+                          <span>{{speaker.name}}</span>
+                          {% if speaker.twitter %}
+                            (<a href="//twitter.com/{{speaker.twitter}}">@{{speaker.twitter}}</a>)
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ol>
+      </li>
+    {% endfor %}
+  </ol>
+</section>

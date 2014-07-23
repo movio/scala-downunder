@@ -1,0 +1,7 @@
+{
+  "name": "downunder",
+  "dependencies": {
+    "bootstrap": "3.2.0",
+    "jquery-sticky": "jquery-sticky#2126fe2560063bb0bb93e6eae84c91e35b7a212b"
+  }
+}

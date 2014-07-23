@@ -1,0 +1,77 @@
+.section-schedule {
+  h2 {
+    color: @schedule-title-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .schedule-day {
+    .day {
+      color: @schedule-day-color;
+      padding: @schedule-day-padding 0;
+    }
+
+    .sessions {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: @schedule-guideline-ray-left;
+        background-color: @schedule-guideline-ray-color;
+        width: @schedule-guideline-ray-width;
+      }
+
+      .session {
+        position: relative;
+        padding-left: @schedule-guideline-width;
+        margin-bottom: @schedule-session-bottom;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: @schedule-guideline-circle-left;
+          width: @schedule-guideline-circle-size;
+          height: @schedule-guideline-circle-size;
+          border-radius: 50%;
+          border: @schedule-guideline-circle-border;
+          background-color: @schedule-guideline-circle-bg;
+        }
+
+        .time {
+          margin-bottom: @schedule-session-time-bottom;
+        }
+
+        .tracks {
+          .flex-display();
+          .justify-content(space-between);
+          .flex-wrap(wrap);
+        }
+
+        .track {
+          display: block;
+          width: 100%;
+          .flex-grow(1);
+          margin-bottom: @track-bottom;
+
+          .track-name {
+            color: @track-name-color;
+            font-weight: bold;
+            margin-bottom: @track-name-bottom;
+          }
+
+          .track-speaker {
+            color: @track-speaker-color;
+          }
+
+          @media (min-width: @screen-md-min) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

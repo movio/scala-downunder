@@ -1,0 +1,24 @@
+.section-sponsors {
+  h2 {
+    text-align: center;
+    color: @sponsors-title-color;
+    text-transform: uppercase;
+  }
+
+  .sponsors {
+    .flex-display();
+    .justify-content(space-between);
+    .flex-wrap(wrap);
+
+    .sponsor {
+      .flex-grow(1);
+      width: 100%;
+      text-align: center;
+      padding: @sponsors-padding;
+
+      @media (min-width: @screen-md-min) {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.section-banner {
+  background-color: @banner-bg;
+  color: @banner-color;
+  width: 100%;
+  z-index: 200;
+
+  .container {
+    text-align: center;
+  }
+
+  a, .date {
+    display: block;
+  }
+
+  .separator {
+    display: none;
+    padding: 0 10px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    a, .separator, .date {
+      display: inline;
+    }
+  }
+}

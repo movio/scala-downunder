@@ -1,0 +1,73 @@
+.section-location {
+  .flex-display();
+  .justify-content(space-between);
+  .flex-wrap(wrap);
+  padding: 0;
+
+  > div {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .venue {
+    background-color: @location-venue-bg;
+    color: @location-venue-color;
+
+    .content {
+      padding: 1em;
+    }
+  }
+
+  .map {
+
+  }
+
+  .hotel-photo {
+    display: none;
+  }
+
+  .hotel {
+    background-color: @location-hotel-bg;
+    color: @location-hotel-color;
+
+    .content {
+      padding: 1em;
+    }
+  }
+
+  @media (min-width: @screen-md-min) {
+    > div {
+      width: 50%;
+      min-height: 300px;
+    }
+
+    .venue {
+      .flex-display();
+      .justify-content(flex-end);
+
+      .content {
+        .flex-grow(1);
+        max-width: (@container-max-width / 2);
+        float: right;
+      }
+    }
+
+    .hotel-photo {
+      display: block;
+      background-image: url("./images/hotel.jpg");
+      background-size: cover;
+    }
+
+    .hotel {
+      .flex-display();
+      .justify-content(flex-start);
+
+      .content {
+        .flex-grow(1);
+        max-width: (@container-max-width / 2);
+        float: left;
+        text-align: right;
+      }
+    }
+  }
+}

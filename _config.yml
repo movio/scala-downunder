@@ -1,0 +1,10 @@
+# Site settings
+title: Scala Downunder
+description: "Scala Downunder Conference"
+baseurl: ""
+url: "scaladownunder.org"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: ['bower_components', 'node_modules', '_gulp', 'resources/scripts', 'resources/styles', 'resources/icons', 'bower.json', 'package.json', 'gulpfile.js']

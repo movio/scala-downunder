@@ -1,0 +1,24 @@
+.section-footer {
+  padding: 1em;
+  background-color: @gray-dark;
+  color: @gray-light;
+
+  .container {
+    .flex-display();
+    .justify-content(space-between);
+    .flex-wrap(wrap);
+  }
+
+  .contact, .copyright {
+    width: 100%;
+    .flex-grow(1);
+
+    a {
+      color: @red;
+    }
+
+    @media (min-width: @screen-md-min) {
+      width: 50%;
+    }
+  }
+}

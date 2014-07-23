@@ -1,0 +1,18 @@
+.section-logo {
+  min-height: @logo-min-height;
+  text-align: center;
+  background-color: @blue;
+  background-image: url("./images/header-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @screen-md-min) {
+    background-image: url("./images/header.jpg");
+  }
+
+  .icon {
+    width: 400px;
+    height: 400px;
+  }
+}

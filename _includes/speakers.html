@@ -1,0 +1,16 @@
+<section class="section-speakers">
+  <h2>Speakers</h2>
+
+  <div class="container">
+    <ul class="speakers">
+      {% for speaker in site.data.speakers %}
+        <li class="speaker">
+          <div class="speaker-photo" style="background-image:url('resources/images/speakers/{{ speaker.photo }}')"></div>
+          <div class="speaker-name">{{ speaker.name }}</div>
+          <div class="speaker-role">{{ speaker.role }}</div>
+          <div class="speaker-description">{{ speaker.description }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
