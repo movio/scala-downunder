@@ -10,7 +10,7 @@
 
   > div {
     width: 100%;
-    min-height: 500px;
+    min-height: 300px;
   }
 
   .venue {
@@ -53,7 +53,7 @@
     color: @location-hotel-color;
 
     h2 {
-      text-align: right;
+      text-align: left;
     }
 
     .content {
@@ -70,6 +70,7 @@
   @media (min-width: @screen-md-min) {
     > div {
       width: 50%;
+      min-height: 500px;
     }
 
     .venue {
@@ -92,6 +93,10 @@
     .hotel {
       .flex-display();
       .justify-content(flex-start);
+
+      h2 {
+        text-align: right;
+      }
 
       .content {
         .flex-grow(1);

@@ -33,7 +33,7 @@
 
       .session {
         position: relative;
-        padding-left: (@schedule-guideline-width + 30);
+        padding-left: @schedule-guideline-width;
         margin-bottom: @schedule-session-bottom;
 
         &::before {
@@ -63,6 +63,10 @@
             border: @schedule-guideline-circle-border;
             border-radius: 50%;
           }
+        }
+
+        @media (min-width: @screen-md-min) {
+          padding-left: (@schedule-guideline-width + 30);
         }
 
         .tracks {

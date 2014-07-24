@@ -14,9 +14,16 @@
 
   .section-icon {
     position: relative;
-    top: @logo-top;
-    width: @logo-size;
-    height: @logo-size;
+    top: (.75 * @logo-top);
+    width: (.75 * @logo-size);
+    height: (.75 * @logo-size);
     fill: @logo-color;
+
+    @media (min-width: @screen-sm-min) {
+      top: @logo-top;
+      width: @logo-size;
+      height: @logo-size;
+    }
   }
+
 }
