@@ -1,6 +1,10 @@
-@import "bootstrap/less/normalize";
-@import "bootstrap/less/mixins";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+@import (inline) "normalize-css/normalize.css";
+
+@import "mixins";
 @import "flexbox";
 @import "global";
 @import "banner";
@@ -23,25 +27,33 @@
 @gray: #666666;
 @gray-dark: #353535;
 
-@transition-duration: 300ms;
 
 // GLOBAL
 @color: #888;
+@font-size: 18px;
+@transition-duration: 400ms;
 @container-max-width: 800px;
+@section-icon-size: 30px;
+@section-padding: @font-size;
+@link-lighter: 20%;
 
 // HEADER
-@header-bg: #333;
+@header-bg: @gray-dark;
 @header-padding: 20px;
 @header-link-padding: 10px;
 @header-link-color: #666;
 @header-link-color-hover: @red;
 
 // LOGO
+@logo-color: #fff;
 @logo-min-height: 300px;
+@logo-size: 200px;
+@logo-top: ((@logo-min-height - @logo-size) / 2 - @section-padding);
 
 // RED BANNER
 @banner-bg: @red;
 @banner-color: #FFF;
+@banner-hover-color: @gray-dark;
 
 // WELCOME
 @welcome-title-color: @red;
@@ -72,9 +84,6 @@
 @schedule-day-color: @blue;
 @schedule-day-padding: 1rem;
 
-@schedule-session-bottom: 4rem;
-@schedule-session-time-bottom: 5px;
-
 @schedule-guideline-width: 100px;
 @schedule-guideline-ray-width: 2px;
 @schedule-guideline-ray-color: @gray-white;
@@ -84,8 +93,14 @@
 @schedule-guideline-circle-bg: #fff;
 @schedule-guideline-circle-left: ((@schedule-guideline-width - @schedule-guideline-circle-size) / 2);
 
+@schedule-session-bottom: 4rem;
+@schedule-session-time-bottom: 5px;
+@schedule-session-photo-size: (0.8 * @schedule-guideline-width);
+@schedule-session-photo-left: ((@schedule-guideline-width - @schedule-session-photo-size) / 2);
+
 // SCHEDULE - TRACK
 @track-bottom: 1rem;
+@track-right: 1rem;
 @track-name-color: @blue;
 @track-name-bottom: 5px;
 @track-speaker-color: @blue-dark;
@@ -93,12 +108,18 @@
 // LOCATION
 @location-venue-bg: @blue;
 @location-venue-color: @gray-white;
+@location-venue-hover-color: @red;
 @location-hotel-bg: @red;
 @location-hotel-color: @gray-white;
 
 // SPONSORS
 @sponsors-title-color: @red;
 @sponsors-padding: 1rem;
+
+// CONTACT
+@contact-color: @gray-light;
+@contact-bg: @gray-dark;
+@contact-link-color: @red;
 
 // RESPONSIVE
 @screen-xs-min:                  480px;

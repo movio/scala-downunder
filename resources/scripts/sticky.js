@@ -1,11 +1,19 @@
-var sticky = require('sticky');
+var sticky = require('sticky'),
+    elements = require('./elements');
 
-console.log('Sticky ready 4');
+elements.header.sticky({topSpacing:0});
 
-var header = $(document.getElementById('header'));
-var banner = $(document.getElementById('banner'));
+function stickBanner() {
+  if (elements.isSmall()) {
+    elements.banner.unstick();
+  } else {
+    elements.banner.sticky({topSpacing: elements.header.outerHeight()});
+  }
+}
 
-console.log('Top banner', header.outerHeight());
+stickBanner();
 
-$("#header").sticky({topSpacing:0});
-$("#banner").sticky({topSpacing:header.outerHeight()});
+$(window).resize(function () {
+  elements.header.sticky('update');
+  stickBanner();
+});

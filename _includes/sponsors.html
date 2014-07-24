@@ -1,11 +1,15 @@
 <section class="section-sponsors">
+  <svg class="section-icon">
+    <use xlink:href="#icon-sponsor" />
+  </svg>
   <h2>Sponsors</h2>
   <ul class="sponsors container">
+    {% for sponsor in site.data.sponsors %}
     <li class="sponsor">
-      <img src="resources/images/logos/logo-movio.png" alt="Movio">
+      <a href="//{{sponsor.link}}" target="_blank">
+        <img src="resources/images/logos/{{sponsor.logo}}" alt="{{sponsor.name}}">
+      </a>
     </li>
-    <li class="sponsor">
-      <img src="resources/images/logos/logo-typesafe.png" alt="Typesafe">
-    </li>
+    {% endfor %}
   </ul>
 </section>

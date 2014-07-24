@@ -1,7 +1,7 @@
 .section-footer {
-  padding: 1em;
-  background-color: @gray-dark;
-  color: @gray-light;
+  padding: @section-padding;
+  background-color: @contact-bg;
+  color: @contact-color;
 
   .container {
     .flex-display();
@@ -14,7 +14,12 @@
     .flex-grow(1);
 
     a {
-      color: @red;
+      color: @contact-link-color;
+      .transition(color @transition-duration);
+
+      &:hover {
+        color: lighten(@contact-link-color, @link-lighter);
+      }
     }
 
     @media (min-width: @screen-md-min) {

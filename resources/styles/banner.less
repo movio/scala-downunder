@@ -12,6 +12,14 @@
     display: block;
   }
 
+  a {
+    .transition(color @transition-duration);
+
+    &:hover {
+      color: @banner-hover-color;
+    }
+  }
+
   .separator {
     display: none;
     padding: 0 10px;

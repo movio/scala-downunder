@@ -1,4 +1,7 @@
-<section class="section-schedule">
+<section id="schedule" class="section-schedule">
+  <svg class="section-icon">
+    <use xlink:href="#icon-schedule" />
+  </svg>
   <h2>Schedule</h2>
 
   <ol class="schedule container">
@@ -7,7 +10,10 @@
         <div class="day">{{ schedule.day }}</div>
         <ol class="sessions">
           {% for session in schedule.sessions %}
-            <li class="session">
+            <li class="session {% if session.photo %}with-photo{% endif %}">
+              {% if session.photo %}
+                <div class="session-photo" style="background-image:url('resources/images{{session.photo}}')"></div>
+              {% endif %}
               <div class="time">{{session.from}} - {{session.to}}</div>
               <ul class="tracks">
                 {% for track in session.tracks %}
@@ -18,7 +24,7 @@
                         <li class="track-speaker">
                           <span>{{speaker.name}}</span>
                           {% if speaker.twitter %}
-                            (<a href="//twitter.com/{{speaker.twitter}}">@{{speaker.twitter}}</a>)
+                            (<a href="//twitter.com/{{speaker.twitter}}" target="_blank">@{{speaker.twitter}}</a>)
                           {% endif %}
                         </li>
                       {% endfor %}

@@ -1,4 +1,8 @@
 .section-schedule {
+  .section-icon {
+    fill: @schedule-title-color;
+  }
+
   h2 {
     color: @schedule-title-color;
     text-align: center;
@@ -41,6 +45,23 @@
           background-color: @schedule-guideline-circle-bg;
         }
 
+        &.with-photo {
+          &::before {
+            display: none;
+          }
+
+          .session-photo {
+            position: absolute;
+            top: 0;
+            left: @schedule-session-photo-left;
+            width: @schedule-session-photo-size;
+            height: @schedule-session-photo-size;
+            background-size: cover;
+            border: @schedule-guideline-circle-border;
+            border-radius: 50%;
+          }
+        }
+
         .time {
           margin-bottom: @schedule-session-time-bottom;
         }
@@ -56,6 +77,7 @@
           width: 100%;
           .flex-grow(1);
           margin-bottom: @track-bottom;
+          padding-right: @track-right;
 
           .track-name {
             color: @track-name-color;
@@ -65,6 +87,14 @@
 
           .track-speaker {
             color: @track-speaker-color;
+
+            a {
+              .transition(color @transition-duration);
+
+              &:hover {
+                color: lighten(@track-speaker-color, @link-lighter);
+              }
+            }
           }
 
           @media (min-width: @screen-md-min) {

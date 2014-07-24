@@ -1,10 +1,194 @@
 - day: Friday September 5, 2014
   sessions:
-    - from: 8em
+    - from: 8am
       to: 9am
       tracks:
         - name: Registration Open
+    - from: 9am
+      to: 10am
+      photo: "/speakers/jonas.jpg"
+      tracks:
+        - name: "5 years of Akka"
+          speakers:
+            - name: Jonas Bonér
+    - from: 10am
+      to: 11am
+      tracks:
+        - name: "Catalyst: A Functional Query Optilizer for Spark and Shark"
+          speakers:
+            - name: Michael Ambrust
+              twitter: michaelambrust
+        - name: "Quote or be quoted"
+          speakers:
+            - name: Denys Shabalin
+              twitter: den_sh
+    - from: 11am
+      to: 12pm
+      tracks:
+        - name: "Reactive Streams: And why you should care"
+          speakers:
+            - name: Victor Klang
+              twitter: viktorklang
+            - name: Roland Kuhn
+              twitter: rolandkuhn
+        - name: "Slick in the field, learning to forget ORM"
+          speakers:
+            - name: Renato Cavalcanti
+              twitter: renatocaval
     - from: 12pm
       to: 1pm
       tracks:
         - name: Lunch
+    - from: 1pm
+      to: 2pm
+      photo: "/speakers/peter.jpg"
+      tracks:
+        - name: "Akka-streams"
+          speakers:
+            - name: Peter Vlugter
+    - from: 2pm
+      to: 3pm
+      tracks:
+        - name: "akka-http: (un)REST for your Actors"
+          speakers:
+            - name: Mathias Doenitz
+              twitter: sirthias
+        - name: "The Trouble with Tests"
+          speakers:
+            - name: Bill Venners
+              twitter: bvenners
+    - from: 3pm
+      to: 4pm
+      tracks:
+        - name: "Resilient Applications with Akka Persistence"
+          speakers:
+            - name: Patrik Nordwall
+              twitter: patriknw
+            - name: Konrad Malawski
+              twitter: ktosopl
+            - name: Björn Antonsson
+              twitter: bantonsson
+        - name: "Macros for the Rest of Us"
+          speakers:
+            - name: Dave Gurnell
+              twitter: davegurnell
+    - from: 4pm
+      to: 5pm
+      tracks:
+        - name: "Writing Reactive Applications for Fun"
+          speakers:
+            - name: Matthias Nehlsen
+              twitter: matthiasnehlsen
+        - name: "Simplifying Scala - The Past, Present and Future"
+          speakers:
+            - name: Simon Ochsenreigher
+    - from: 5pm
+      to: 6pm
+      tracks:
+        - name: "Spores: Towards Function-Passing Style in the Age of Concurrency and Distribution"
+          speakers:
+            - name: Heather Miller
+              twitter: heathercmiller
+        - name: "Easy Metaprogramming for Everyone!"
+          speakers:
+            - name: Eugene Burmako
+              twitter: xeno_by
+            - name: Denys Shabalin
+              twitter: den_sh
+- day: Saturday September 6, 2014
+  sessions:
+    - from: 8.30am
+      to: 9am
+      tracks:
+        - name: Welcome Coffee
+    - from: 9am
+      to: 10am
+      photo: "/speakers/josh.jpg"
+      tracks:
+        - name: "TBC"
+          speakers:
+            - name: Josh Suereth
+    - from: 10am
+      to: 11am
+      tracks:
+        - name: "Catalyst: A Functional Query Optilizer for Spark and Shark"
+          speakers:
+            - name: Michael Ambrust
+              twitter: michaelambrust
+        - name: "Quote or be quoted"
+          speakers:
+            - name: Denys Shabalin
+              twitter: den_sh
+    - from: 11am
+      to: 12pm
+      tracks:
+        - name: "Reactive Streams: And why you should care"
+          speakers:
+            - name: Victor Klang
+              twitter: viktorklang
+            - name: Roland Kuhn
+              twitter: rolandkuhn
+        - name: "Slick in the field, learning to forget ORM"
+          speakers:
+            - name: Renato Cavalcanti
+              twitter: renatocaval
+    - from: 12pm
+      to: 1pm
+      tracks:
+        - name: Lunch
+    - from: 1pm
+      to: 2pm
+      photo: "/speakers/christopher.jpg"
+      tracks:
+        - name: "Scala for Java devs"
+          speakers:
+            - name: Christopher Hunt
+    - from: 2pm
+      to: 3pm
+      tracks:
+        - name: "akka-http: (un)REST for your Actors"
+          speakers:
+            - name: Mathias Doenitz
+              twitter: sirthias
+        - name: "The Trouble with Tests"
+          speakers:
+            - name: Bill Venners
+              twitter: bvenners
+    - from: 3pm
+      to: 4pm
+      tracks:
+        - name: "Resilient Applications with Akka Persistence"
+          speakers:
+            - name: Patrik Nordwall
+              twitter: patriknw
+            - name: Konrad Malawski
+              twitter: ktosopl
+            - name: Björn Antonsson
+              twitter: bantonsson
+        - name: "Macros for the Rest of Us"
+          speakers:
+            - name: Dave Gurnell
+              twitter: davegurnell
+    - from: 4pm
+      to: 5pm
+      tracks:
+        - name: "Writing Reactive Applications for Fun"
+          speakers:
+            - name: Matthias Nehlsen
+              twitter: matthiasnehlsen
+        - name: "Simplifying Scala - The Past, Present and Future"
+          speakers:
+            - name: Simon Ochsenreigher
+    - from: 5pm
+      to: 6pm
+      tracks:
+        - name: "Spores: Towards Function-Passing Style in the Age of Concurrency and Distribution"
+          speakers:
+            - name: Heather Miller
+              twitter: heathercmiller
+        - name: "Easy Metaprogramming for Everyone!"
+          speakers:
+            - name: Eugene Burmako
+              twitter: xeno_by
+            - name: Denys Shabalin
+              twitter: den_sh

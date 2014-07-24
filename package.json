@@ -32,10 +32,14 @@
     "transform": [ "browserify-shim" ]
   },
   "browser": {
-    "sticky": "./bower_components/jquery-sticky/jquery.sticky.js"
+    "sticky": "./bower_components/jquery-sticky/jquery.sticky.js",
+    "velocity": "./bower_components/velocity/jquery.velocity.js",
+    "velocityUI": "./bower_components/velocity/velocity.ui.js"
   },
   "browserify-shim": {
-    "sticky": "sticky"
+    "sticky": "sticky",
+    "velocity": "velocity",
+    "velocityUI": "velocityUI"
   },
-  "repository" : { "type" : "git", "url" : "TODO" }
+  "repository" : { "type" : "git", "url" : "https://github.com/movio/scala-downunder" }
 }

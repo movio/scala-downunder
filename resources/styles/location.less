@@ -15,6 +15,20 @@
 
     .content {
       padding: 1em;
+
+      a {
+        .transition(color @transition-duration);
+
+        &:hover {
+          color: @location-venue-hover-color;
+        }
+      }
+    }
+
+    .venue-icon {
+      fill: @location-venue-color;
+      width: @section-icon-size;
+      height: @section-icon-size;
     }
   }
 
@@ -32,6 +46,12 @@
 
     .content {
       padding: 1em;
+    }
+
+    .hotel-icon {
+      fill: @location-hotel-color;
+      width: @section-icon-size;
+      height: @section-icon-size;
     }
   }
 

@@ -1,4 +1,8 @@
 .section-sponsors {
+  .section-icon {
+    fill: @sponsors-title-color;
+  }
+
   h2 {
     text-align: center;
     color: @sponsors-title-color;
@@ -15,6 +19,11 @@
       width: 100%;
       text-align: center;
       padding: @sponsors-padding;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
 
       @media (min-width: @screen-md-min) {
         width: 50%;

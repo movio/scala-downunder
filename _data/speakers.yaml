@@ -1,1 +1,19 @@
+- name: Jonas Bonér
+  role: CTO & Co-Founder of Typesafe
+  photo: jonas.jpg
+  description: "Jonas Bonér is a creator of the Akka event-driven middleware project. Previously he was a core technical contributor at Terracotta, working on core JVM-level clustering technology, and at BEA, as part of the JRockit JVM team. Jonas has also been an active contributor to open source projects including the AspectWerkz Aspect-Oriented Programming (AOP) framework and the Eclipse AspectJ project."
 
+- name: Peter Vlugter
+  role: Senior Software Engineer at Typesafe
+  photo: peter.jpg
+  description: "Peter Vlugter works as a hakker on the Akka team and as the tech lead for Atmos, a commercial project for scaling out and monitoring Akka applications. Peter's background is in Artificial Intelligence research, particularly Natural Language Processing systems. Peter lives in the South Island of New Zealand and spends some of the year at Akka HQ in Sweden."
+
+- name: Josh Suereth
+  role: Senior Software Engineer at Typesafe
+  photo: josh.jpg
+  description: TODO
+
+- name: Christopher Hunt
+  role: Senior Software Engineer at Typesafe
+  photo: christopher.jpg
+  description: TODO

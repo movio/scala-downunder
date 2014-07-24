@@ -1,14 +1,10 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 body {
   color: @color;
-  font-size: 18px;
+  font-size: @font-size;
 }
 
 section {
-  padding: 1em;
+  padding: @section-padding;
 }
 
 .container {
@@ -30,4 +26,11 @@ ul, ol {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.section-icon {
+  display: block;
+  margin: 0 auto;
+  width: @section-icon-size;
+  height: @section-icon-size;
 }
