@@ -11,6 +11,7 @@
         - name: "5 years of Akka"
           speakers:
             - name: Jonas Bonér
+          description: "BLA BLA BLA"
     - from: 10am
       to: 11am
       tracks:

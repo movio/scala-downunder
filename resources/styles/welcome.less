@@ -1,7 +1,10 @@
 .section-welcome {
   h2 {
-    text-align: center;
     color: @welcome-title-color;
+  }
+
+  p {
+    font-weight: 300;
   }
 
   .booking {
@@ -9,16 +12,20 @@
     background-color: @welcome-booking-bg;
     text-align: center;
     padding: @welcome-booking-padding;
+    margin-top: @welcome-booking-padding;
 
     p {
       text-align: center;
+      margin: 0;
     }
 
     .price {
       color: @welcome-booking-color-alt;
+      margin: 10px;
 
       .value {
-        font-size: 2em;
+        font-size: 2.5em;
+        font-weight: bold;
       }
     }
 
@@ -26,9 +33,11 @@
       display: inline-block;
       color: @welcome-booking-color-alt;
       border: @welcome-register-border;
-      padding: @welcome-register-padding;
+      padding: @welcome-register-padding (5 * @welcome-register-padding);
       text-decoration: none;
       text-transform: uppercase;
+      margin-top: @welcome-booking-padding;
+      font-weight: bold;
       .transition(color @transition-duration, background-color @transition-duration;);
 
       &:hover {

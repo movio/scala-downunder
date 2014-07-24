@@ -1,10 +1,19 @@
 body {
   color: @color;
   font-size: @font-size;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section {
-  padding: @section-padding;
+  padding: 100px @section-padding;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: @title-size;
+    margin: 0;
+    margin-bottom: @title-bottom;
+  }
 }
 
 .container {
@@ -33,4 +42,8 @@ a {
   margin: 0 auto;
   width: @section-icon-size;
   height: @section-icon-size;
+}
+
+address {
+  font-style: normal;
 }

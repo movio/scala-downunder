@@ -8,6 +8,7 @@
 
   h2 {
     text-align: center;
+    font-size: @title-size;
   }
 
   .speakers {
@@ -32,7 +33,7 @@
     }
 
     .speaker-name {
-      padding: @speakers-name-padding @speakers-padding;
+      padding: (4 * @speakers-name-padding) @speakers-padding @speakers-name-padding;
       color: @speakers-name-color;
       font-size: @speakers-name-font-size;
       font-weight: bold;
@@ -42,6 +43,7 @@
       padding: @speakers-role-padding @speakers-padding;
       color: @speakers-role-color;
       font-size: @speakers-role-font-size;
+      font-weight: 600;
     }
 
     .speaker-description {

@@ -7,12 +7,15 @@
     color: @schedule-title-color;
     text-align: center;
     text-transform: uppercase;
+    font-size: @title-size;
   }
 
   .schedule-day {
     .day {
       color: @schedule-day-color;
-      padding: @schedule-day-padding 0;
+      padding: 0 0 (2 * @schedule-day-padding);
+      font-weight: 300;
+      font-size: 1.4em;
     }
 
     .sessions {
@@ -30,7 +33,7 @@
 
       .session {
         position: relative;
-        padding-left: @schedule-guideline-width;
+        padding-left: (@schedule-guideline-width + 30);
         margin-bottom: @schedule-session-bottom;
 
         &::before {
@@ -62,10 +65,6 @@
           }
         }
 
-        .time {
-          margin-bottom: @schedule-session-time-bottom;
-        }
-
         .tracks {
           .flex-display();
           .justify-content(space-between);
@@ -74,6 +73,7 @@
 
         .track {
           display: block;
+          position: relative;
           width: 100%;
           .flex-grow(1);
           margin-bottom: @track-bottom;
@@ -81,12 +81,13 @@
 
           .track-name {
             color: @track-name-color;
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: @track-name-bottom;
           }
 
           .track-speaker {
             color: @track-speaker-color;
+            font-weight: 600;
 
             a {
               .transition(color @transition-duration);
@@ -97,11 +98,23 @@
             }
           }
 
+          .track-description {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+
           @media (min-width: @screen-md-min) {
             width: 50%;
           }
         }
       }
     }
+  }
+
+  .schedule-day:last-child .session:last-child {
+    margin-bottom: 0;
   }
 }

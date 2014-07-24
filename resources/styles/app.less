@@ -17,7 +17,7 @@
 @import "sponsors";
 @import "welcome";
 
-// Variables
+// COLORS
 @blue: #23BDC5;
 @blue-dark: #0F3659;
 @red: #F05938;
@@ -27,27 +27,29 @@
 @gray: #666666;
 @gray-dark: #353535;
 
-
 // GLOBAL
-@color: #888;
-@font-size: 18px;
+@color: @gray;
+@font-size: 20px;
 @transition-duration: 400ms;
-@container-max-width: 800px;
-@section-icon-size: 30px;
+@container-max-width: 1000px;
+@section-icon-size: 50px;
+@section-top: 60px;
 @section-padding: @font-size;
 @link-lighter: 20%;
+@title-size: 48px;
+@title-bottom: 40px;
 
 // HEADER
 @header-bg: @gray-dark;
-@header-padding: 20px;
+@header-padding: 30px;
 @header-link-padding: 10px;
-@header-link-color: #666;
+@header-link-color: @gray;
 @header-link-color-hover: @red;
 
 // LOGO
 @logo-color: #fff;
-@logo-min-height: 300px;
-@logo-size: 200px;
+@logo-min-height: 500px;
+@logo-size: 300px;
 @logo-top: ((@logo-min-height - @logo-size) / 2 - @section-padding);
 
 // RED BANNER
@@ -57,12 +59,12 @@
 
 // WELCOME
 @welcome-title-color: @red;
-@welcome-booking-bg: #DDD;
+@welcome-booking-bg: @gray-white;
 @welcome-booking-color: @color;
 @welcome-booking-color-alt: @red;
-@welcome-booking-padding: 20px;
+@welcome-booking-padding: 40px;
 @welcome-register-border: 2px solid @red;
-@welcome-register-padding: 20px;
+@welcome-register-padding: 10px;
 
 // SPEAKERS
 @speakers-bg: @blue;
@@ -72,7 +74,7 @@
 @speakers-name-font-size: 1em;
 @speakers-name-padding: 5px;
 @speakers-role-color: #fff;
-@speakers-role-font-size: .5em;
+@speakers-role-font-size: .6em;
 @speakers-role-padding: 0;
 @speakers-description-color: #fff;
 @speakers-description-font-size: .8em;
@@ -86,7 +88,7 @@
 
 @schedule-guideline-width: 100px;
 @schedule-guideline-ray-width: 2px;
-@schedule-guideline-ray-color: @gray-white;
+@schedule-guideline-ray-color: #CFCFCF;
 @schedule-guideline-ray-left: ((@schedule-guideline-width - @schedule-guideline-ray-width) / 2);
 @schedule-guideline-circle-size: 30px;
 @schedule-guideline-circle-border: 3px solid @blue;
@@ -117,7 +119,7 @@
 @sponsors-padding: 1rem;
 
 // CONTACT
-@contact-color: @gray-light;
+@contact-color: #fff;
 @contact-bg: @gray-dark;
 @contact-link-color: @red;
 
