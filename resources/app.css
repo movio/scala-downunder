@@ -832,6 +832,9 @@ address {
   margin-bottom: 1rem;
   padding-right: 1rem;
 }
+.section-schedule .schedule-day .sessions .session .track.with-description {
+  cursor: pointer;
+}
 .section-schedule .schedule-day .sessions .session .track .track-name {
   color: #23bdc5;
   font-weight: 700;
@@ -850,11 +853,16 @@ address {
   color: #1e6bb0;
 }
 .section-schedule .schedule-day .sessions .session .track .track-description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  display: none;
+  position: fixed;
+  opacity: 0;
+  z-index: 300;
+  overflow: hidden;
+  background: #23bdc5;
+  padding: 5rem;
+}
+.section-schedule .schedule-day .sessions .session .track .visible {
+  overflow: auto;
 }
 @media (min-width: 992px) {
   .section-schedule .schedule-day .sessions .session .track {
@@ -863,6 +871,9 @@ address {
 }
 .section-schedule .schedule-day:last-child .session:last-child {
   margin-bottom: 0;
+}
+.with-track-description {
+  overflow: hidden;
 }
 .section-speakers {
   background-color: #23bdc5;

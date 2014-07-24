@@ -1,4 +1,5 @@
 module.exports = {
+  body: $('body'),
   header: $(document.getElementById('header')),
   banner: $(document.getElementById('banner')),
   about: $(document.getElementById('about')),

@@ -1,3 +1,4 @@
 var sticky = require('./sticky'),
     map = require('./map'),
-    scrollTo = require('./scrollTo');
+    scrollTo = require('./scrollTo'),
+    talk = require('./talk');

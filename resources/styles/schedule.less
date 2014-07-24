@@ -83,6 +83,10 @@
           margin-bottom: @track-bottom;
           padding-right: @track-right;
 
+          &.with-description {
+            cursor: pointer;
+          }
+
           .track-name {
             color: @track-name-color;
             font-weight: 700;
@@ -103,11 +107,17 @@
           }
 
           .track-description {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            display: none;
+            position: fixed;
+            opacity: 0;
+            z-index: 300;
+            overflow: hidden;
+            background: @blue;
+            padding: 5rem;
+          }
+
+          .visible {
+            overflow: auto;
           }
 
           @media (min-width: @screen-md-min) {
@@ -121,4 +131,8 @@
   .schedule-day:last-child .session:last-child {
     margin-bottom: 0;
   }
+}
+
+.with-track-description {
+  overflow: hidden;
 }
