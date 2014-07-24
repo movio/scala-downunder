@@ -1,9 +1,13 @@
 .section-header {
   background-color: @header-bg;
-  padding: @header-padding 0;
+  padding: (@header-padding / 2) 0;
   text-align: center;
   width: 100%;
   z-index: 100;
+
+  @media (min-width: @screen-sm-min) {
+    padding: @header-padding 0;
+  }
 
   .header-links {
     .header-link {

@@ -563,10 +563,15 @@ address {
 }
 .section-header {
   background-color: #353535;
-  padding: 30px 0;
+  padding: 15px 0;
   text-align: center;
   width: 100%;
   z-index: 100;
+}
+@media (min-width: 768px) {
+  .section-header {
+    padding: 30px 0;
+  }
 }
 .section-header .header-links .header-link {
   display: inline;
