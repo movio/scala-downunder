@@ -30,12 +30,13 @@
     }
 
     .register {
-      display: inline-block;
+      display: block;
       color: @welcome-booking-color-alt;
       border: @welcome-register-border;
-      padding: @welcome-register-padding (5 * @welcome-register-padding);
+      padding: @welcome-register-padding;
       text-decoration: none;
       text-transform: uppercase;
+      text-align: center;
       margin-top: @welcome-booking-padding;
       font-weight: bold;
       .transition(color @transition-duration, background-color @transition-duration;);
@@ -43,6 +44,11 @@
       &:hover {
         background-color: @welcome-booking-color-alt;
         color: #fff;
+      }
+
+      @media (min-width: @screen-sm-min) {
+        display: inline-block;
+        padding: @welcome-register-padding (5 * @welcome-register-padding);
       }
     }
   }
