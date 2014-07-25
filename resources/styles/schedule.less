@@ -118,11 +118,12 @@
             z-index: 300;
             overflow: hidden;
             background: @blue;
-            padding: 5rem;
+            padding: 2rem;
             color: #fff;
 
             .track-description-close {
               text-align: right;
+              margin-bottom: 10px;
 
               span {
                 text-transform: uppercase;
@@ -139,7 +140,7 @@
 
             .track-description-name {
               font-weight: 700;
-              font-size: @title-size;
+              font-size: (@title-size / 2);
               max-width: 800px;
               margin: 0 auto @title-bottom;
             }
@@ -151,6 +152,14 @@
               ul {
                 list-style: disc inside;
                 padding-left: 1em;
+              }
+            }
+
+            @media (min-width: @screen-md-min) {
+              padding: 5rem;
+
+              .track-description-name {
+                font-size: @title-size;
               }
             }
           }

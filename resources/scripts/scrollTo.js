@@ -10,7 +10,7 @@ function offset() {
 
 $('.header-link a', elements.header).on('click', function (e) {
   var source = e.target || e.srcElement;
-  var destination = (source.getAttribute('href') || '').slice(1);
+  var destination = source.getAttribute('data-href');
 
   if (elements[destination]) {
     elements[destination].velocity('scroll', {duration: 750, offset: offset()});
