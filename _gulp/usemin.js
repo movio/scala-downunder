@@ -3,10 +3,11 @@ var $     = require('./utils/plugins');
 
 gulp.task('usemin', function() {
   gulp.src('./_site/*.html')
-    .pipe(usemin({
+    .pipe($.minifyHtml({empty: true, spare: true, comments: true}))
+    .pipe($.usemin({
       css: [$.minifyCss(), 'concat', $.rev()],
       // html: [minifyHtml({empty: true})],
       js: [$.uglify(), $.rev()]
     }))
-    .pipe(gulp.dest('./site'));
+    .pipe(gulp.dest('./_site'));
 });
