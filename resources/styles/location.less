@@ -59,8 +59,11 @@
       .flex-display();
       .flex-direction(column);
       .justify-content(center);
-      .align-items(flex-end);
       padding: 1em;
+      text-align: left;
+    }
+
+    h2 {
       text-align: left;
     }
 
@@ -103,6 +106,7 @@
 
       .content {
         .flex-grow(1);
+        .align-items(flex-end);
         max-width: (@container-max-width / 2);
         text-align: right;
         padding-left: 7em;

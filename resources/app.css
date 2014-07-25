@@ -676,11 +676,10 @@ address {
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  -webkit-align-items: flex-end;
-  -moz-align-items: flex-end;
-  -ms-align-items: flex-end;
-  align-items: flex-end;
   padding: 1em;
+  text-align: left;
+}
+.section-location .hotel h2 {
   text-align: left;
 }
 .section-location .hotel .hotel-icon {
@@ -735,6 +734,10 @@ address {
     -moz-flex-grow: 1;
     -ms-flex-grow: 1;
     flex-grow: 1;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
     max-width: 500px;
     text-align: right;
     padding-left: 7em;
