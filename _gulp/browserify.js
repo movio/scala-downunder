@@ -6,9 +6,11 @@ var handleErrors = require('./utils/handleErrors');
 var log          = require('./utils/log');
 
 gulp.task('browserify', function() {
+	if (process.argv.indexOf('--no-watch') > -1) {
+		global.isWatching = false;
+	}
 
-	global.isWatching = true;
-	var bundleMethod = global.isWatching ? watchify : browserify;
+	var bundleMethod = (global.isWatching === false) ? browserify : watchify;
 
 	var bundler = bundleMethod({
 		entries: ['./resources/scripts/app.js'],
