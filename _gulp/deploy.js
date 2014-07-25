@@ -8,9 +8,10 @@ gulp.task('deploy', function() {
     .pipe($.shell([
       'jekyll build',
       'gulp usemin',
+      'gulp minifyHtml',
       'cd _site && git add . -A',
       'cd _site && git commit -m "Publish website"',
       'cd _site && git push -f origin gh-pages'
-    ]}))
+    ]))
     .on('error', handleErrors);
 });
