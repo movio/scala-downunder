@@ -1,4 +1,5 @@
 name: "Building a DBMS in Scala or how types can turn a SQL interpreter into a SQL compiler"
+type: replay
 speakers:
   - name: Tiark Rompf
     twitter: tiarkrompf

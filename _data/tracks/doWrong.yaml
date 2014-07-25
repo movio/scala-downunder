@@ -1,0 +1,7 @@
+name: "Everything I do is wrong… but it is ok"
+type: remote
+speakers:
+  - name: Josh Suereth
+    twitter: jsuereth
+    bio: 02-josh
+description: "Josh presents a keynote around the nature of abstractions, how they apply to code and how to retain your sanity as a consequence."

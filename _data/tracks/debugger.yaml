@@ -1,4 +1,5 @@
 name: "Rethinking the debugger"
+type: replay
 speakers:
   - name: Iulian Dragos
     twitter: jaguarul

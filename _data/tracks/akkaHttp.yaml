@@ -1,4 +1,5 @@
 name: "akka-http: (un)REST for your Actors"
+type: replay
 speakers:
   - name: Mathias Doenitz
     twitter: sirthias

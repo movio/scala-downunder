@@ -5,13 +5,14 @@
   <h2>Speakers</h2>
 
   <div class="container">
+    {% assign speakers = site.data.speakers | sort %}
     <ul class="speakers">
-      {% for speaker in site.data.speakers %}
+      {% for speaker_hash in speakers %}
+        {% assign speaker = speaker_hash[1] %}
         <li class="speaker">
           <div class="speaker-photo" style="background-image:url('resources/images/speakers/{{ speaker.photo }}')"></div>
           <div class="speaker-name">{{ speaker.name }}</div>
           <div class="speaker-role">{{ speaker.role }}</div>
-          <div class="speaker-description">{{ speaker.description }}</div>
         </li>
       {% endfor %}
     </ul>

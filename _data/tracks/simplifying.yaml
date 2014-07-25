@@ -1,4 +1,5 @@
 name: "Simplifying Scala - The Past, Present and Future"
+type: replay
 speakers:
   - name: Simon Ochsenreigher
 description: "Making a programming language simpler and more consistent by removing cruft, confusing language elements and obstacles frequently hit by developers is an important part of language design, as it reduces the time developers need to get proficient in Scala.

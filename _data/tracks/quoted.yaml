@@ -1,4 +1,5 @@
 name: "Quote or be quoted"
+type: replay
 speakers:
   - name: Denys Shabalin
     twitter: den_sh

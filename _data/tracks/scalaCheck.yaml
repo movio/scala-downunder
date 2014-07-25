@@ -1,4 +1,5 @@
 name: "Testing Stateful Systems with ScalaCheck"
+type: replay
 speakers:
   - name: Rickard Nilsson
     twitter: rickynils

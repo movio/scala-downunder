@@ -138,6 +138,41 @@
               }
             }
 
+            .track-description-speakers {
+              &.with-bio {
+                list-style: none;
+                padding-left: 0;
+              }
+            }
+
+            .track-description-bio {
+              padding-top: 2rem;
+              border-bottom: 1px solid #fff;
+
+              .track-description-bio-photo {
+                float: left;
+                width: 150px;
+                border-radius: 50%;
+                border: @speaker-photo-border;
+                margin-right: 2rem;
+              }
+
+              .track-description-bio-name {
+                color: @blue-dark;
+                font-size: 1.5em;
+                font-weight: 700;
+              }
+
+              .track-description-bio-role {
+                font-weight: 700;
+              }
+            }
+
+            .track-description-speaker {
+              color: @blue-dark;
+              font-weight: 700;
+            }
+
             .track-description-name {
               font-weight: 700;
               font-size: (@title-size / 2);

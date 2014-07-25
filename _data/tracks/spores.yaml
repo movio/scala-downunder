@@ -1,4 +1,5 @@
 name: "Spores: Towards Function-Passing Style in the Age of Concurrency and Distribution"
+type: replay
 speakers:
   - name: Heather Miller
     twitter: heathercmiller

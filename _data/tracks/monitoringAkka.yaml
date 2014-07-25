@@ -1,4 +1,5 @@
 name: "Monitoring Akka"
+type: replay
 speakers:
   - name: Jan Machacek
     twitter: honzam399

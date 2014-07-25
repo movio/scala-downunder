@@ -1,0 +1,6 @@
+name: "Futures and Async: When to Use Which?"
+type: replay
+speakers:
+  - name: Philipp Haller
+    twitter: philippkhaller
+description: "Async is a new Scala module designed to simplify non-blocking concurrency using futures. At first glance, Async appears to be yet another option to do concurrent or parallel programming in Scala, besides actors, futures, and parallel collections. This talk attempts to provide simple and clear guidelines on when to use futures and when to use Async. Concrete real-world examples will shed light on the relationship between futures and Async and their synergy. By showing the idiomatic use of futures and Async, the talk aims to simplify the choice of concurrency constructs in Scala."

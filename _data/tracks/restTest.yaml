@@ -1,4 +1,5 @@
 name: "RESTTest: exploring DSL design in Scala"
+type: replay
 speakers:
   - name: Iain Hull
     twitter: IainHull

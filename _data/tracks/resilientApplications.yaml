@@ -1,4 +1,5 @@
 name: "Resilient Applications with Akka Persistence"
+type: replay
 speakers:
   - name: Patrik Nordwall
     twitter: patriknw

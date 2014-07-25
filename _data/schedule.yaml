@@ -17,7 +17,7 @@
     - from: 11am
       to: 12pm
       tracks:
-        - reactiveStreams
+        - futuresAsync
         - slick
     - from: 12pm
       to: 1pm
@@ -27,7 +27,7 @@
       to: 2pm
       photo: "/speakers/peter.jpg"
       tracks:
-        - akkaStreams
+        - reactiveStreams
     - from: 2pm
       to: 3pm
       tracks:
@@ -58,7 +58,7 @@
       to: 10am
       photo: "/speakers/josh.jpg"
       tracks:
-        - josh
+        - doWrong
     - from: 10am
       to: 11am
       tracks:

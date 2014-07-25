@@ -1,5 +1,7 @@
-name: "5 years of Akka"
+name: "A 5 year retrospective and the future of distributed computing"
+type: remote
 speakers:
   - name: Jonas Bonér
     twitter: jboner
-description: "<p>Coming soon...</p>"
+    bio: 01-jonas
+description: "With the five year anniversary of Akka back in July, Jonas started to reflect on some of the key moments. This keynote reflects on Jonas's personal journey and the inspirations, people, and milestones that all contributed to Akka becoming what it is today. The keynote also discusses the future of Akka and distributed computing at large."

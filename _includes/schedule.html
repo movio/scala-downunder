@@ -20,6 +20,17 @@
                   {% assign track = site.data.tracks[trackName] %}
                   <li class="track{% if track.description %} with-description{% endif %}">
                     <div class="track-name">{{track.name}}</div>
+                    {% if track.type %}
+                      <div class="track-type">
+                        {% if track.type == 'person' %}
+                          In person
+                        {% elsif track.type == 'remote' %}
+                          Remote video
+                        {% elsif track.type == 'replay' %}
+                          Replay
+                        {% endif %}
+                      </div>
+                    {% endif %}
                     <ul class="track-speakers">
                       {% for speaker in track.speakers %}
                         <li class="track-speaker">
@@ -34,7 +45,37 @@
                       <div class="track-description">
                         <div class="track-description-close"><span>Close ✖</soan></div>
                         <div class="track-description-name">{{track.name}}</div>
-                        <div class="track-description-content">{{track.description | markdownify}}</div>
+                        <div class="track-description-content">
+                          {% if track.type %}
+                            <div class="track-description-type">
+                              {% if track.type == 'person' %}
+                                In person, by
+                              {% elsif track.type == 'remote' %}
+                                Remote video, by
+                              {% elsif track.type == 'replay' %}
+                                Replay, by
+                              {% endif %}
+                            </div>
+                          {% endif %}
+                          {% for speaker in track.speakers %}
+                            <ul class="track-description-speakers {% if speaker.bio %}with-bio{% endif %}">
+                              {% if speaker.bio %}
+                                {% assign bio = site.data.speakers[speaker.bio] %}
+                                <li class="track-description-bio">
+                                  <img class="track-description-bio-photo" src="resources/images/speakers/{{bio.photo}}">
+                                  <div class="track-description-bio-name">{{bio.name}} {% if speaker.twitter %}(<a href="//twitter.com/{{speaker.twitter}}" target="_blank">@{{speaker.twitter}}</a>){% endif %}</div>
+                                  <div class="track-description-bio-role">{{bio.role}}</div>
+                                  <div class="track-description-bio-description">{{bio.description | markdownify}}</div>
+                                </li>
+                              {% else %}
+                                <li class="track-description-speaker">
+                                  {{speaker.name}} {% if speaker.twitter %}(<a href="//twitter.com/{{speaker.twitter}}" target="_blank">@{{speaker.twitter}}</a>){% endif %}
+                                </li>
+                              {% endif %}
+                            </ul>
+                          {% endfor %}
+                          {{track.description | markdownify}}
+                        </div>
                       </div>
                     {% endif %}
                   </li>

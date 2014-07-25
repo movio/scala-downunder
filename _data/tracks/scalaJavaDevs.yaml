@@ -1,5 +1,7 @@
-name: "Scala for Java devs"
+name: "Scala for people who are happy with Java"
+type: person
 speakers:
   - name: Christopher Hunt
     twitter: huntchr
-description: "Coming soon..."
+    bio: 04-christopher
+description: "In this talk Christopher will discuss the features of Scala he finds useful on a day-to-day basis since having been previously a \"happy Java programmer\"."

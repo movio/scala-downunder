@@ -1,4 +1,5 @@
 name: "The Reader Monad for Dependency Injection"
+type: replay
 speakers:
   - name: Jason Arhart
     twitter: jarhart
