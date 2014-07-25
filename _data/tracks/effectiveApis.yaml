@@ -1,0 +1,12 @@
+name: "Effective APIs"
+speakers:
+  - name: Josh Suereth
+    twitter: jsuereth
+description: "Scala provides a lot of power for the application developer. Even more the library author. This talk will walk through various tricks/techniques that can be used to expose a well-designed API for your users. We focus on three areas:
+
+
+* Exposing design through types
+
+* Designing for binary compatibility
+
+* Remaining versatile in the runtime"

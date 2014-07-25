@@ -1,0 +1,14 @@
+name: "Testing Stateful Systems with ScalaCheck"
+speakers:
+  - name: Rickard Nilsson
+    twitter: rickynils
+description: "Property-based testing can be applied to more than just small units of code! Come see how to write ScalaCheck properties that define the behavior of complete, stateful systems. Nicely randomised and automatically simplified test cases come free with ScalaCheck, as usual.
+
+
+Stateful testing has been part of ScalaCheck for a long time, but never promoted much. Now, a complete rewrite inspired by Erlang QuickCheck adds exciting new functionality for finding concurrency issues in your code.
+
+
+You'll also see interesting examples on how to scale up the idea of test case generation. Why settle for generating function inputs, when you can parameterise your entire server infrastructure and let ScalaCheck find out which variant break down?
+
+
+Scale up your tests and scale up confidence in the system you're building."

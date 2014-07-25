@@ -466,6 +466,7 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 .section-icon {
   display: block;
@@ -626,6 +627,19 @@ address {
   text-align: left;
 }
 .section-location .venue .content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
   padding: 1em;
 }
 .section-location .venue .content a {
@@ -648,11 +662,26 @@ address {
   background-color: #f05938;
   color: #f1f1f1;
 }
-.section-location .hotel h2 {
-  text-align: left;
-}
 .section-location .hotel .content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
   padding: 1em;
+  text-align: left;
 }
 .section-location .hotel .hotel-icon {
   fill: #f1f1f1;
@@ -681,7 +710,6 @@ address {
     -ms-flex-grow: 1;
     flex-grow: 1;
     max-width: 500px;
-    float: right;
   }
   .section-location .hotel-photo {
     display: block;
@@ -708,7 +736,6 @@ address {
     -ms-flex-grow: 1;
     flex-grow: 1;
     max-width: 500px;
-    float: left;
     text-align: right;
     padding-left: 7em;
   }
@@ -832,13 +859,19 @@ address {
   margin-bottom: 1rem;
   padding-right: 1rem;
 }
-.section-schedule .schedule-day .sessions .session .track.with-description {
+.section-schedule .schedule-day .sessions .session .track.with-description .track-name {
   cursor: pointer;
+}
+.section-schedule .schedule-day .sessions .session .track.with-description .track-name:hover {
+  color: #f05938;
 }
 .section-schedule .schedule-day .sessions .session .track .track-name {
   color: #23bdc5;
   font-weight: 700;
   margin-bottom: 5px;
+  -webkit-transition: color 400ms;
+  -o-transition: color 400ms;
+  transition: color 400ms;
 }
 .section-schedule .schedule-day .sessions .session .track .track-speaker {
   color: #0f3659;
@@ -860,9 +893,39 @@ address {
   overflow: hidden;
   background: #23bdc5;
   padding: 5rem;
+  color: #fff;
+}
+.section-schedule .schedule-day .sessions .session .track .track-description .track-description-close {
+  text-align: right;
+}
+.section-schedule .schedule-day .sessions .session .track .track-description .track-description-close span {
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: color 400ms;
+  -o-transition: color 400ms;
+  transition: color 400ms;
+}
+.section-schedule .schedule-day .sessions .session .track .track-description .track-description-close span:hover {
+  color: #f05938;
+}
+.section-schedule .schedule-day .sessions .session .track .track-description .track-description-name {
+  font-weight: 700;
+  font-size: 48px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.section-schedule .schedule-day .sessions .session .track .track-description .track-description-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section-schedule .schedule-day .sessions .session .track .track-description .track-description-content ul {
+  list-style: disc inside;
+  padding-left: 1em;
 }
 .section-schedule .schedule-day .sessions .session .track .visible {
-  overflow: auto;
+  overflow: auto !important;
 }
 @media (min-width: 992px) {
   .section-schedule .schedule-day .sessions .session .track {

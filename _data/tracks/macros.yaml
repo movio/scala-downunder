@@ -1,0 +1,22 @@
+name: "Macros for the Rest of Us"
+speakers:
+  - name: Dave Gurnell
+    twitter: davegurnell
+description: "Macros are a powerful feature of Scala 2.10 that have received significant updates in Scala 2.11. For the journeyman Scala programmer, however, they can be difficult to approach. There is a scarcity of detailed documentation on important concepts such as AST creation, type inspection, and debugging, that can make your first non-trivial macro a daunting prospect.
+
+
+In this talk, Dave Gurnell will approach Scala 2.11's macros from the point of view of the journeyman programmer. He will walk through the creation of a simple macro-based library for data validation, highlighting hints, tips, and best practices that will dramatically lower the barrier to entry into the world of macros. Topics covered will include:
+
+
+* project setup and separate compilation
+
+* AST creation
+
+* quasiquotes
+
+* type inspection
+
+* macro debugging
+
+
+Dave is a Scala consultant and developer working for Underscore in London, UK. He has been a Scala developer since 2010 and a functional programmer for nearly a decade."

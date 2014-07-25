@@ -1,0 +1,5 @@
+name: "Rethinking the debugger"
+speakers:
+  - name: Iulian Dragos
+    twitter: jaguarul
+description: "New abstractions for concurrency make writing programs easier by moving away from threads and locks, but debugging such programs becomes harder. The call-stack, an essential tool in understanding why and how control flow reached a certain point in the program, loses meaning when inspected in traditional debuggers. Futures, actors or iteratees make code easier to write and reason about, and in this talk I'll show a simple solution to make them easier to debug. The tool I present integrates well with the Eclipse plugin for Scala, and shows how a \"reactive debugger\" might look like."

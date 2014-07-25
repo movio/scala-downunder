@@ -16,7 +16,8 @@
               {% endif %}
               <div class="time">{{session.from}} - {{session.to}}</div>
               <ul class="tracks">
-                {% for track in session.tracks %}
+                {% for trackName in session.tracks %}
+                  {% assign track = site.data.tracks[trackName] %}
                   <li class="track{% if track.description %} with-description{% endif %}">
                     <div class="track-name">{{track.name}}</div>
                     <ul class="track-speakers">
@@ -31,7 +32,9 @@
                     </ul>
                     {% if track.description %}
                       <div class="track-description">
-                        {{track.description}}
+                        <div class="track-description-close"><span>Close ✖</soan></div>
+                        <div class="track-description-name">{{track.name}}</div>
+                        <div class="track-description-content">{{track.description | markdownify}}</div>
                       </div>
                     {% endif %}
                   </li>

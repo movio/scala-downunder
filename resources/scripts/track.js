@@ -24,7 +24,7 @@ $('a', elements.schedule).on('click', function (e) {
   e.stopPropagation();
 });
 
-$('.track.with-description', elements.schedule).on('click', function (e) {
+$('.track.with-description .track-name', elements.schedule).on('click', function (e) {
   if (inProgress) return;
   inProgress = true;
   elements.body.addClass('with-track-description');
@@ -46,8 +46,12 @@ $('.track.with-description', elements.schedule).on('click', function (e) {
     .velocity({
       top: 0,
       height: window.innerHeight
+    }, {duration: duration})
+    .velocity({
+      width: '100%',
+      height: '100%'
     }, {
-      duration: duration,
+      duration: 1,
       complete: function () {
         elems.description.addClass('visible');
         inProgress = false;
@@ -55,7 +59,7 @@ $('.track.with-description', elements.schedule).on('click', function (e) {
     });
 });
 
-$('.track-description', elements.schedule).on('click', function (e) {
+$('.track-description-close span', elements.schedule).on('click', function (e) {
   if (inProgress) return;
   inProgress = true;
   e.stopPropagation();
@@ -64,6 +68,10 @@ $('.track-description', elements.schedule).on('click', function (e) {
 
   elems.description.removeClass('visible');
   elems.description
+    .velocity({
+      width: window.innerWidth,
+      height: window.innerHeight
+    }, {duration: 1})
     .velocity({
       top: elems.rect.top,
       height: elems.rect.height

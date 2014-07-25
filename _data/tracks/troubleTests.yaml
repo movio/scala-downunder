@@ -1,0 +1,8 @@
+name: "The Trouble with Tests"
+speakers:
+  - name: Bill Venners
+    twitter: bvenners
+description: "Tests provide benefits, but also incur costs. Tests can help you achieve and maintain desired levels of software quality, but they take time (and therefore cost money) to write, compile, and run. They can give you confidence to perform needed refactoring, but can slow you down during refactors that break many tests. And although they can help you find bugs, they can't prove the absence of bugs.
+
+
+So how do you maximize the return on your investment in tests? In this talk, Bill Venners, lead developer of ScalaTest, will tackle this question and give his opinions. You'll come away with a set of specific guidelines that can help you decide how best to employ testing in your projects."

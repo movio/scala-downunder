@@ -1,0 +1,17 @@
+name: "Slick in the field, learning to forget ORM"
+speakers:
+  - name: Renato Cavalcanti
+    twitter: renatocaval
+description: "For many years developers on the JVM platform were used to ORM frameworks. Our code was filled with annotations (or worst XML configuration files). We learned how to map our classes to relational tables and deal with its peculiarities. We had big, sometimes huge graph of objects, mapped to relational tables. We brought them all to memory, changed them and let it be automagically persisted back at the end of our transactions.
+
+
+In a Scala/Slick world we deal with data and persistence in a totally different way. Our model are immutable structures (case classes and tuples), nullable columns are mapped to Options (and that's cool), relations are expressed by id references instead of object associations (that's less cool). Instead of writing xml or filling our code with annotations, we write type-safe idiomatic Scala code. We compose queries in a functional style. We map and flatMap over it.
+
+
+But is that good or bad? What brings Slick to the readability and maintainability of our code base? How do we test our business logic when a great deal of it is executed outside the JVM?
+
+
+In this talk we'll share our experience in building real world applications with Slick. The lessons learned, the patterns and anti-patterns we went through in our journey to shift the way we were used to think about persistence.
+
+
+This is not an introduction to Slick. This talk is aimed to developers already using Slick."

@@ -1,0 +1,5 @@
+name: "DOT calculus"
+speakers:
+  - name: Nada Amin
+    twitter: nadamin
+description: "The DOT (Dependent Object Types) calculus attempts to ground Scala's type system in fewer, but powerful, constructs. In this talk I will describe what these constructs are, and how they relate to Scala's current type system. I will also show how DOT simplifies type inference. Finally, I will touch upon the challenges in the meta-theory."

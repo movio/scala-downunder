@@ -1,0 +1,5 @@
+name: "Writing Reactive Applications for Fun"
+speakers:
+  - name: Matthias Nehlsen
+    twitter: matthiasnehlsen
+description: "In this presentation Matthias will be talking about how he came to writing reactive applications for fun. He started doing so in March 2013 and has since written the two reactive applications [BirdWatch](https://github.com/matthiasn/BirdWatch) and [sse-chat](https://github.com/matthiasn/sse-chat) and multiple blog posts explaining these applications in detail. In this talk he will be discussing the underlying architecture he has discovered for building reactive applications using Scala and Play Framework."

@@ -1,0 +1,22 @@
+name: "Catalyst: A Functional Query Optilizer for Spark and Shark"
+speakers:
+  - name: Michael Armbrust
+    twitter: michaelarmbrust
+description: "Shark is a SQL engine built on Apache Hive, that replaces Hive's MapReduce execution engine with Apache Spark. Spark's fine-grained resource model and efficient execution engine allow Shark to outperform Hive by over 100x for data stored in memory. However, until now, Shark's performance has been limited by the flexibility of Hive's query optimizer. Catalyst aims to remedy this situation by building a simple yet powerful optimization framework using Scala language features.
+
+
+Query optimization can greatly improve both the productivity of developers and the performance of the queries that they write. A good query optimizer is capable of automatically rewriting relational queries to execute more efficiently, using techniques such as filtering data early, utilizing available indexes, and even ensuring different data sources are joined in the most efficient order. By performing these transformations, the optimizer not only improves the execution times of relational queries, but also frees the developer to focus on the semantics of their application instead of its performance.
+
+
+Unfortunately, building an optimizer is an incredibly complex engineering task and thus many open source systems perform only very simple optimizations. Past research [1,2] has attempted to combat this complexity by providing frameworks that allow the creators of optimizers to write possible optimizations as a set of declarative rules. However, the use of such frameworks has required the creation and maintenance of special “optimizer compilers” and forced the burden of learning a complex domain specific language upon those wishing to add features to the optimizer.
+
+
+Catalyst solves this problem by leveraging Scala's powerful pattern matching and runtime reflection. This framework allows developers to concisely specify complex optimizations, such as pushing filters past joins functionally. Increased conciseness allows our developers both to create new optimizations faster and more easily reason about the correctness of the optimization.
+
+
+Catalyst also uses the new reflection capabilities in Scala 2.10 to generate custom classes at runtime for storing intermediate results and evaluating complex relational expressions. Doing so allows us to avoid boxing of primitive values and has been shown to improve performance by orders of magnitude in some cases.
+
+
+* [1] Graefe, G. The Cascades Framework for Query Optimization. In Data Engineering Bulletin. Sept. 1995.
+
+* [2] Goetz Graefe , David J. DeWitt, The EXODUS optimizer generator, Proceedings of the 1987 ACM SIGMOD international conference on Management of data, p.160-172, May 27-29, 1987, San Francisco, California, United States"

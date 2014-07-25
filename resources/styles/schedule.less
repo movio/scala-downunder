@@ -83,14 +83,19 @@
           margin-bottom: @track-bottom;
           padding-right: @track-right;
 
-          &.with-description {
+          &.with-description .track-name {
             cursor: pointer;
+
+            &:hover {
+              color: @red;
+            }
           }
 
           .track-name {
             color: @track-name-color;
             font-weight: 700;
             margin-bottom: @track-name-bottom;
+            .transition(color @transition-duration);
           }
 
           .track-speaker {
@@ -114,10 +119,44 @@
             overflow: hidden;
             background: @blue;
             padding: 5rem;
+            color: #fff;
+
+            .track-description-close {
+              text-align: right;
+
+              span {
+                text-transform: uppercase;
+                font-weight: 700;
+                cursor: pointer;
+                display: inline-block;
+                .transition(color @transition-duration);
+
+                &:hover {
+                  color: @red;
+                }
+              }
+            }
+
+            .track-description-name {
+              font-weight: 700;
+              font-size: @title-size;
+              max-width: 800px;
+              margin: 0 auto @title-bottom;
+            }
+
+            .track-description-content {
+              max-width: 800px;
+              margin: 0 auto;
+
+              ul {
+                list-style: disc inside;
+                padding-left: 1em;
+              }
+            }
           }
 
           .visible {
-            overflow: auto;
+            overflow: auto !important;
           }
 
           @media (min-width: @screen-md-min) {

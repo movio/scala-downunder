@@ -1,0 +1,14 @@
+name: "RESTTest: exploring DSL design in Scala"
+speakers:
+  - name: Iain Hull
+    twitter: IainHull
+description: "This is not about a building a better REST Testing library, it's about DSL design, using REST testing as the example.
+
+
+Scala is a powerful language and a few intermediate techniques can quickly turned a regular library into a nice literate DSL.
+
+
+Starting with a fluent API together we will apply these techniques to create a DSL. Showing how they are used and how they compose to form a complete DSL. As the DSL evolves we will examine, what works, what does not and how the DSL’s motivation can inform this.
+
+
+Finally we examine how to structure and test a DSL codebase; the importance of documentation, noting how DSL documentation is different to library documentation, and discuss when is it appropriate to introduce a DSL."

@@ -1,0 +1,9 @@
+name: "Resilient Applications with Akka Persistence"
+speakers:
+  - name: Patrik Nordwall
+    twitter: patriknw
+  - name: Konrad Malawski
+    twitter: ktosopl
+  - name: Björn Antonsson
+    twitter: bantonsson
+description: "In this presentation you will learn how to leverage the features introduced in Akka Persistence: opt-in at-least-once delivery semantics between actors and the ability to recover application state after a crash. Both are implemented by storing immutable facts in a persisted append-only log. We will show you how to create persistent actors using command and event sourcing, replicate events with reliable communication, scale out and improve resilience with clustering. All examples will be available as an Activator template allowing you to get started right away."

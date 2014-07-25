@@ -1,0 +1,5 @@
+name: "Quote or be quoted"
+speakers:
+  - name: Denys Shabalin
+    twitter: den_sh
+description: "In Scala 2.11 we introduced quasiquotes, a rich domain-specific api for tree manipulation. Despite advanced functionality and deep integration into the language, the api itself is just a library that relies on existing language features: string interpolation, macros, type classes etc. This talk will walk through implementation of custom quotations for a tiny language embedded within Scala and introduce you to core concepts used in quasiquotes: splicing, cardinality, lifting/unlifting and show how all of this makes your life easier."

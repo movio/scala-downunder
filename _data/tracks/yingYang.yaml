@@ -1,0 +1,8 @@
+name: "Yin-Yang: Programming DSLs Made Simple"
+speakers:
+  - name: Vojin Jovanovic
+    twitter: vojjov
+description: "Interfaces of deep embedded DSLs, like Slick and Squeryl, are inconsistent with the Scala standard library. Furthermore, they rely on complicated types and implicit conversions. This pollutes the API and makes type errors difficult to understand. For these reasons, designing a beautiful DSL API is a challenging and time consuming task.
+
+
+In this talk I will explain how Yin-Yang makes designing and using DSLs a breeze. I will show DSLs with an idiomatic Scala API that are translated with macros to the complicated deep embedding. Then I show how we used Yin-Yang to give Slick's interface a face-lift and improved its performance threefold with just a few hundred lines of code. I finish the talk by live coding a DSL for big decimal numbers."

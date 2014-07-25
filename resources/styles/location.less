@@ -22,6 +22,9 @@
     }
 
     .content {
+      .flex-display();
+      .flex-direction(column);
+      .justify-content(center);
       padding: 1em;
 
       a {
@@ -52,12 +55,13 @@
     background-color: @location-hotel-bg;
     color: @location-hotel-color;
 
-    h2 {
-      text-align: left;
-    }
-
     .content {
+      .flex-display();
+      .flex-direction(column);
+      .justify-content(center);
+      .align-items(flex-end);
       padding: 1em;
+      text-align: left;
     }
 
     .hotel-icon {
@@ -80,7 +84,6 @@
       .content {
         .flex-grow(1);
         max-width: (@container-max-width / 2);
-        float: right;
       }
     }
 
@@ -101,7 +104,6 @@
       .content {
         .flex-grow(1);
         max-width: (@container-max-width / 2);
-        float: left;
         text-align: right;
         padding-left: 7em;
 

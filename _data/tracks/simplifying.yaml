@@ -1,0 +1,19 @@
+name: "Simplifying Scala - The Past, Present and Future"
+speakers:
+  - name: Simon Ochsenreigher
+description: "Making a programming language simpler and more consistent by removing cruft, confusing language elements and obstacles frequently hit by developers is an important part of language design, as it reduces the time developers need to get proficient in Scala.
+
+
+However, changing a language to remove corner cases and oversights is not without pitfalls, because every change has an associated cost, which sometimes requires changes to the whole stack to provide an easy migration path, helpful error messages and IDE support.
+
+
+In the first part of this talk, we will walk through past and recent improvements and simplifications of Scala and its libraries and discover the delicate balance between useful fixes which improve developers' lives and pointless changes which just waste their time.
+
+
+In the second part, we will discuss the efforts currently underway to improve the design and the consistency of Scala, giving an optimistic overview of things still to come and the tools we can leverage to pull this off.
+
+
+In the final part, I will offer my vision of the direction Scala should be heading, and present an alternative runtime that could allow us to vastly simplify our compiler implementation¹ and give us much-needed improvements like proper tail calls, continuations, ahead-of-time compilation, small static binaries, and much more.
+
+
+¹ At least if we didn't need to keep supporting legacy VMs ..."

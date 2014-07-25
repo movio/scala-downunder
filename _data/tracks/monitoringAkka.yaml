@@ -1,0 +1,8 @@
+name: "Monitoring Akka"
+speakers:
+  - name: Jan Machacek
+    twitter: honzam399
+description: "Jan will show how the Reactive Monitor helped a major financial services organisation to provide monitoring of their Akka system. The talk will explore the challenges of monitoring mission-critical systems, especially under heavy load. Jan will show the implementation details of the Reactive Monitor, pointing out the benefits of the Akka IO layer to implement non-blocking and resilient transport layer. The talk will close by going back to the large-scale system and show how we used the information from the monitoring to tune the Akka system.
+
+
+You will not need any extensive Scala or Akka experience to understand the core principles, though a good appreciation of the challenges of mission-critical systems will help you understand the scale of the problem; knowledge of Akka, Scala and AspectJ will help you understand the details of the code."

@@ -1,0 +1,17 @@
+name: "Building a DBMS in Scala or how types can turn a SQL interpreter into a SQL compiler"
+speakers:
+  - name: Tiark Rompf
+    twitter: tiarkrompf
+description: "Commercial and open source database systems consist of millions of lines of highly optimized C code. Yet, their performance on individual queries falls 10x or 100x short of what a hand-written, specialized, implementation of the same query can achieve.
+
+
+In a recent joint project at Oracle Labs and the DATA Lab at EPFL, we have set out to implement a database query engine in Scala. With just about 3000 lines of Scala code, our prototype supports the full TPCH benchmark suite and runs queries several times as fast as highly-tuned commercial systems (> 10x peak speedup).
+
+
+This talk will focus on the key aspect that sets the system apart from other DB engines: where other systems interpret query plans, operator by operator, we generate and compile low-level C code for whole queries using the LMS (Lightweight Modular Staging) framework.
+
+
+In particular, we will discuss powerful design patterns that leverage generative programming to provide a high degree of abstraction without performance penalty, and thus make Scala a more productive alternative to C for systems-level programming where the last drop of performance matters.
+
+
+Among these design patterns are mixed-stage data structures that contains both static and dynamic parts (e.g. static schema and dynamic values for data records) and staged interpreters which can be mechanically turned into compilers (e.g. for SQL queries or regular expressions)."

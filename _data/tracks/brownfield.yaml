@@ -1,0 +1,14 @@
+name: "Enterprise brownfield: Scala to the rescue"
+speakers:
+  - name: Joachim Hofer
+    twitter: johofer
+description: "When an Enterprise Java software product celebrates its decennial, maintenance becomes hard, and new features tend to increase complexity exponentially. Development comes dangerously close to grinding to a halt.
+
+
+At this point, the team decides to switch to Scala. Without the luxury of green fields, this has to happen incrementally, yet fast.
+
+
+This talk describes what happens next: How the infrastructure, tools, libraries and architecture change, how the team copes with all this, what lessons are learned and finally, what consequences there are for the product.
+
+
+The talk is based on the experience of the software development team at imbus with moving to Scala for product development."

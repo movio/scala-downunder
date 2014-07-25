@@ -1,0 +1,14 @@
+name: "How to manage large amounts of data with Iteratee"
+speakers:
+  - name: Quentin Adam
+    twitter: waxzce
+description: "How to manage a large file with HTTP? Is it possible to manage data stream when you are in a HTTP POST request? How to be relax when managing data stream (ie : not use while(true) hack or something I/O block)?
+
+
+This talk is about Play! iteratee and how to use it on real project : what is an iteratee? why it's useful? how to use it? how to manage it? is it clean? is your code readable or not?
+
+
+Real use + theories + example + animated gif
+
+
+I give this talk in tokyo, nantes, seoul... Scala.io organizer + regular speaker in various conference."

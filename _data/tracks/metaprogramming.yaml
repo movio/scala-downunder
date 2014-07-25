@@ -1,0 +1,16 @@
+name: "Easy Metaprogramming for Everyone!"
+speakers:
+  - name: Eugene Burmako
+    twitter: xeno_by
+  - name: Denys Shabalin
+    twitter: den_sh
+description: "Scala 2.10 was the first language release that provided a public native API for metaprogramming Scala, introducing facilities for compile-time (macros) and runtime (Java-like reflection) metaprogramming. These facilities have brought a lot of feedback, and we've been thinking hard how to make sense of it.
+
+
+At this point it is clear that dedicated support for metaprogramming is useful. Previously, one had to deal with ad-hoc solutions like textual code generation and command-line scalap invocations. However, now there is a full-fledged model of Scala that accounts for the variety of language constructs and includes a comprehensive, backward-compatible API. However, there's still quite some work to be done in order to make our metaprogramming tools enjoyable. The main issues that remain to be addressed are verbosity and brittleness of the underlying API, difficulties with tool integration, tight coupling with scalac, and potential for confusion caused by leaking implementation details and cryptic error messages.
+
+
+The goal of Project Palladium is to make metaprogramming easy, ensuring that it doesn't require knowledge of compiler internals, is safe by construction and is portable across a wide range of implementors. Towards that end, we have rethought the metaprogramming APIs along with the accompanying macro engine, keeping existing functionality in place and at the same time fixing fundamental problems intrinsic to the original implementation.
+
+
+In this talk we will present our progress, showing how easy it is to metaprogram with Palladium, and will outline the place of our developments in the future of Scala."

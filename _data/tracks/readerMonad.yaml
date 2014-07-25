@@ -1,0 +1,12 @@
+name: "The Reader Monad for Dependency Injection"
+speakers:
+  - name: Jason Arhart
+    twitter: jarhart
+description: "There are a number of approaches to Dependency Injection. Some approaches get more attention than others. This talk is about how to do Dependency Injection using the Reader Monad. It will focus on:
+
+
+* What Dependency Injection is and why we use it.
+
+* What the Reader Monad is and how it can be applied to Dependency Injection.
+
+* Some potential problems applying this pattern in an application, along with possible solutions."

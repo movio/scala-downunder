@@ -1,0 +1,14 @@
+name: "akka-http: (un)REST for your Actors"
+speakers:
+  - name: Mathias Doenitz
+    twitter: sirthias
+description: "The new akka-http module, the successor of spray.io, provides a fast and fully-featured client- and server-side HTTP stack. It allows you to easily build REST/HTTP-based integration layers for connecting your Scala applications to the world.
+
+
+In this session we'll look into what akka-http brings to the table, how it is used and where it will add the most value in your overall application architecture.
+
+
+Plenty of code examples will highlight the various client- and server-side APIs as well as give you an idea for what \"RESTful\" programming with akka-http looks like.
+
+
+We'll also talk about the improvements it brings over spray and what is on the agenda regarding the transition from Netty to akka-http as the HTTP \"driver\" for the Play framework."
