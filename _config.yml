@@ -9,4 +9,4 @@ future: false
 markdown: kramdown
 permalink: pretty
 include: ['.nojekyll']
-exclude: ['bower_components', 'node_modules', '_gulp', 'resources/scripts', 'resources/styles', 'resources/icons', 'bower.json', 'package.json', 'gulpfile.js']
+exclude: ['bower_components', 'node_modules', '_gulp', 'resources/scripts', 'resources/styles', 'resources/icons', 'bower.json', 'package.json', 'gulpfile.js', 'README.md']
