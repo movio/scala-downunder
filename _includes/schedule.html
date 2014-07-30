@@ -14,7 +14,7 @@
               {% if session.photo %}
                 <div class="session-photo" style="background-image:url('resources/images{{session.photo}}')"></div>
               {% endif %}
-              <div class="time">{{session.from}} - {{session.to}}</div>
+              <div class="time">{{session.from}}{% if session.to %} - {{session.to}}{% endif %}</div>
               <ul class="tracks">
                 {% for trackName in session.tracks %}
                   {% assign track = site.data.tracks[trackName] %}
@@ -62,7 +62,7 @@
                               {% if speaker.bio %}
                                 {% assign bio = site.data.speakers[speaker.bio] %}
                                 <li class="track-description-bio">
-                                  <img class="track-description-bio-photo" src="resources/images/speakers/{{bio.photo}}">
+                                  <div class="track-description-bio-photo" style="background-image: url('resources/images/speakers/{{bio.photo}}')"></div>
                                   <div class="track-description-bio-name">{{bio.name}} {% if speaker.twitter %}(<a href="//twitter.com/{{speaker.twitter}}" target="_blank">@{{speaker.twitter}}</a>){% endif %}</div>
                                   <div class="track-description-bio-role">{{bio.role}}</div>
                                   <div class="track-description-bio-description">{{bio.description | markdownify}}</div>

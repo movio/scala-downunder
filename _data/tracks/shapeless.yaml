@@ -1,0 +1,10 @@
+name: "How shapeless can help you to build an awesome library"
+type: person
+speakers:
+  - name: Michael Pollmeier
+    twitter: pollmeier
+    bio: 06-michael
+description: "[Shapeless](https://github.com/milessabin/shapeless) is a sophisticated and sometimes complicated library that provides a lot of advanced type level features.
+
+
+This will give you an introduction into one of it's most used tricks (HList) and show you a good use case in my graph traversal library [gremlin-scala](https:// github.com/mpollmeier/gremlin-scala)."

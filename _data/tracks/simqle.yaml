@@ -1,0 +1,7 @@
+name: "Typeclasses and Macros with simqle"
+type: person
+speakers:
+  - name: Jonathan Chow
+    twitter: echojc
+    bio: 07-jonathan
+description: "Learn about Scala typeclasses by example as we implement a thin API for database access. We'll then wrap up with a demonstration of how we can combine them with macros to provide deserialization without any boilerplate or runtime overhead."

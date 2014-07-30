@@ -11,90 +11,61 @@
         - yearsOfAkka
     - from: 10am
       to: 11am
-      tracks:
-        - catalyst
-        - quoted
-    - from: 11am
-      to: 12pm
-      tracks:
-        - futuresAsync
-        - slick
-    - from: 12pm
-      to: 1pm
-      tracks:
-        - lunch
-    - from: 1pm
-      to: 2pm
-      photo: "/speakers/peter.jpg"
-      tracks:
-        - reactiveStreams
-    - from: 2pm
-      to: 3pm
-      tracks:
-        - akkaHttp
-        - troubleTests
-    - from: 3pm
-      to: 4pm
-      tracks:
-        - resilientApplications
-        - macros
-    - from: 4pm
-      to: 5pm
-      tracks:
-        - reactiveApplications
-        - simplifying
-    - from: 5pm
-      to: 6pm
-      tracks:
-        - spores
-        - metaprogramming
-- day: Saturday September 6, 2014
-  sessions:
-    - from: 8.30am
-      to: 9am
-      tracks:
-        - coffee
-    - from: 9am
-      to: 10am
       photo: "/speakers/josh.jpg"
       tracks:
         - doWrong
-    - from: 10am
-      to: 11am
-      tracks:
-        - dbms
-        - dotCalculus
     - from: 11am
       to: 12pm
+      photo: "/speakers/christopher.jpg"
       tracks:
-        - buildingRA
-        - yingYang
+        - scalaJavaDevs
     - from: 12pm
       to: 1pm
       tracks:
         - lunch
     - from: 1pm
+      to: 1:30pm
+      photo: "/speakers/kalman.jpg"
+      tracks:
+        - scalaTest
+    - from: 1:30pm
       to: 2pm
-      photo: "/speakers/christopher.jpg"
+      photo: "/speakers/jonathan.jpg"
       tracks:
-        - scalaJavaDevs
+        - simqle
     - from: 2pm
-      to: 3pm
+      to: 2:30pm
       tracks:
-        - iteratee
-        - restTest
+        - tbc
+    - from: 2:30pm
+      to: 3pm
+      photo: "/speakers/michael.jpg"
+      tracks:
+        - shapeless
     - from: 3pm
+      to: 3:30pm
+      tracks:
+        - tbc
+    - from: 3:30pm
       to: 4pm
       tracks:
-        - effectiveApis
-        - scalaCheck
+        - tea
     - from: 4pm
       to: 5pm
+      photo: "/speakers/peter.jpg"
       tracks:
-        - debugger
-        - brownfield
+        - reactiveStreams
     - from: 5pm
       to: 6pm
+      photo: "/speakers/paul.jpg"
       tracks:
-        - monitoringAkka
-        - readerMonad
+        - crudPlay
+    - from: 6pm
+      tracks:
+        - drinks
+- day: Saturday September 6, 2014
+  sessions:
+    - from: 8.30am
+      to: 6am
+      tracks:
+        - tbc

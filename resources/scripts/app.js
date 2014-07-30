@@ -1,7 +1,7 @@
-var sticky = require('./sticky'),
-    map = require('./map'),
+var map = require('./map'),
     scrollTo = require('./scrollTo'),
-    talk = require('./track');
+    talk = require('./track'),
+    sticky = require('./sticky');
 
 var emailDomain = ['m', 'o', 'v', 'i', 'o', '.', 'c', 'o'];
 var emailName = ['n', 'a', 't', 'a', 'l', 'i', 'e'];

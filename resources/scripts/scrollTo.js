@@ -3,7 +3,15 @@ require('velocityUI');
 var elements = require('./elements');
 
 function offset() {
-  var stickyHeight = elements.header.outerHeight() + (elements.isSmall() ? 0 : elements.banner.outerHeight());
+  if (!elements.stickyHeader) {
+    elements.stickyHeader = $(document.getElementById('header-sticky-wrapper'));
+  }
+
+  if (!elements.stickyBanner) {
+    elements.stickyBanner = $(document.getElementById('banner-sticky-wrapper'));
+  }
+
+  var stickyHeight = elements.stickyHeader.outerHeight() + (elements.isSmall() ? 0 : elements.stickyBanner.outerHeight());
 
   return -1 * (stickyHeight - 2);
 }

@@ -35,7 +35,7 @@ gulp.task('browserify', function() {
 			.on('end', log.end);
 	};
 
-	if(global.isWatching) {
+	if(global.isWatching !== false) {
 		// Rebundle with watchify on changes.
 		bundler.on('update', bundle);
 	}

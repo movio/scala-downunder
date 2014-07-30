@@ -3,6 +3,7 @@ title: Scala Downunder
 description: "Scala Downunder Conference"
 baseurl: ""
 url: "scaladownunder.org"
+future: false
 
 # Build settings
 markdown: kramdown

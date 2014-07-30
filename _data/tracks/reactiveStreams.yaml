@@ -1,10 +1,6 @@
-name: "Reactive Streams: And why you should care"
+name: "Reactive Streams"
 type: person
 speakers:
   - name: Peter Vlugter
     bio: 03-peter
-description: "One of the fundamental problems of I/O is a core problem of communication: How do I know that the recipient is ready to receive my information?
-
-In a pure push model, without taking into consideration Little's Law, it is very easy to produce data at a faster pace than it can be consumed, leading to loss of information, contention on the medium, or even full system failure.
-
-Reactive Streams provide an asynchronous, concurrent, back-pressured/demand-driven solution for that and other problems. We will discuss this and more in this session."
+description: "Reactive flow-based programs model streams of data flowing through transformations. Typesafe is involved in Reactive Streams, an initiative to provide a standard for stream processing with back pressure, and Akka Streams, an upcoming library for defining reactive flows for Akka actors."

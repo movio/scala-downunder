@@ -1,0 +1,7 @@
+name: "ScalaTest"
+type: person
+speakers:
+  - name: Kalman Bekesi
+    twitter: kalmanb
+    bio: 05-kalman
+description: "Kal will take us through in quick intro to ScalaTest how to get the best out of it as well as some neat helpers traits what we've developed at Movio. We'll also look at the how easy it is ScalaTest in you existing Java projects."

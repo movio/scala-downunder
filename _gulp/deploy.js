@@ -8,7 +8,7 @@ gulp.task('deploy', function() {
   return gulp.src('', {read: false})
     .pipe($.shell([
       'gulp build --no-watch',
-      'jekyll build',
+      'jekyll build --future',
       'gulp usemin',
       'gulp minifyHtml',
       'rm _site/resources/app.css',

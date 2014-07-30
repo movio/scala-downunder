@@ -1,0 +1,7 @@
+name: "Lightning fast CRUD with Play Framework"
+type: person
+speakers:
+  - name: Paul Dijou
+    twitter: paul_dijou
+    bio: 08-paul
+description: "Play is an awesome HTTP server (and much more) written in Scala. Lots of people ask \"Is it hard to start using it?\", \"How long will it take me to have a simple application?\" or \"Is it gonna be complex to prototype a CRUD?\". Let's try to find out! And remember, we will only have one hour, so it will have to be super fast."
