@@ -1,5 +1,5 @@
 {
-  "name": "downunder",
+  "name": "scala-downunder",
   "dependencies": {
     "normalize-css": "3.0.1",
     "jquery-sticky": "jquery-sticky#2126fe2560063bb0bb93e6eae84c91e35b7a212b",
