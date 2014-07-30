@@ -35,8 +35,9 @@
         - simqle
     - from: 2pm
       to: 2:30pm
+      photo: "/speakers/jun.jpg"
       tracks:
-        - tbc
+        - adaptingFP
     - from: 2:30pm
       to: 3pm
       photo: "/speakers/michael.jpg"

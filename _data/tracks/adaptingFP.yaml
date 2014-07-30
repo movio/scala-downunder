@@ -1,0 +1,7 @@
+name: "A journey of adapting Functional Programming using Scala"
+type: person
+speakers:
+  - name: Jun Yamog
+    twitter: jkyamog
+    bio: 09-jun
+description: "Short stories and code examples from more than 2 years usage of Scala in production. What worked and what did not work for a small team in Wellington."
