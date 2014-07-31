@@ -9,11 +9,13 @@
     <ul class="speakers">
       {% for speaker_hash in speakers %}
         {% assign speaker = speaker_hash[1] %}
+        {% unless speaker.hidden %}
         <li class="speaker">
           <div class="speaker-photo" style="background-image:url('resources/images/speakers/{{ speaker.photo }}')"></div>
           <div class="speaker-name">{{ speaker.name }}</div>
           <div class="speaker-role">{{ speaker.role }}</div>
         </li>
+        {% endunless %}
       {% endfor %}
     </ul>
   </div>

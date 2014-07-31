@@ -1,0 +1,16 @@
+name: "Unconference"
+type: other
+speakers:
+  - name: Everyone
+description: "Day two will be unstructured hands-on unconference. A chance to play, debate and interact. We'll do some pairing and hacking so bring your laptops. There will be plenty of experienced Scala devs to assist where necessary. Options not limited to:
+
+
+* Project Hacking
+
+* Lightning Talks
+
+* Intro workshops - get your hands dirty with Scala and/or Akka
+
+* Scala Days Videos
+
+* Work through the code from Day One presentations"
