@@ -1,0 +1,17 @@
+.section-conduct {
+  background-color: @blue;
+  color: #ffffff;
+
+  .section-icon {
+    fill: #ffffff;
+  }
+
+  a {
+    text-decoration: underline;
+    .transition(color @transition-duration);
+
+    &:hover {
+      color: @red;
+    }
+  }
+}
