@@ -1,0 +1,7 @@
+name: "Brain-computer Interface Technology and User Centered Design"
+type: "person"
+speakers:
+  - name: "Sarvnaz Taherian"
+    twitter: "SarvnazT"
+    bio: "12-sarvnaz"
+description: "Controlling computers and other electronic devices using the power of thought is definitely not science fiction, thanks to brain-computer interface technology (BCI). This field is rapidly developing, in both research labs and the commercial market. But the field is still heavily focused on technological development, often ignoring the human user in the equation. This presentation will provide the audience with a glimpse of my experiences in developing a BCI assistive solution for individuals with severe physical impairment, highlighting the importance of implementing a user-centered approach. There will also be a live BCI demonstration."
