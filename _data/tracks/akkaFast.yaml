@@ -1,0 +1,10 @@
+name: "Fast pace introduction to Akka"
+type: person
+speakers:
+  - name: Kalman Bekesi
+    twitter: kalmanb
+    bio: 05-kalman
+description: "Akka is a toolkit and runtime for building highly concurrent, distributed, and fault tolerant event-driven applications. It is implemented on the JVM and more recently on the .NET framework.
+
+
+We'll be sprinting from akka basics through to akka clustering. Along the way we'll touch on different features of akka enough to spark interest."

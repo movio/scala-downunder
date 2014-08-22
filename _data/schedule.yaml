@@ -16,17 +16,18 @@
         - scalaJavaDevs
     - from: 11pm
       to: 12pm
+      photo: "/speakers/kalman.jpg"
       tracks:
-        - tbc
+        - akkaFast
     - from: 12pm
       to: 1pm
       tracks:
         - lunch
     - from: 1pm
       to: 1:30pm
-      photo: "/speakers/kalman.jpg"
+      photo: "/speakers/michael.jpg"
       tracks:
-        - scalaTest
+        - slick2
     - from: 1:30pm
       to: 2pm
       photo: "/speakers/jonathan.jpg"
@@ -39,13 +40,15 @@
         - adaptingFP
     - from: 2:30pm
       to: 3pm
+      photo: "/speakers/kalman.jpg"
+      tracks:
+        - scalaTest
+
+    - from: 3pm
+      to: 3:30pm
       photo: "/speakers/michael.jpg"
       tracks:
         - shapeless
-    - from: 3pm
-      to: 3:30pm
-      tracks:
-        - tbc
     - from: 3:30pm
       to: 4pm
       tracks:
@@ -78,7 +81,7 @@
     - from: 11am
       to: 12pm
       tracks:
-        - tbc
+        - lightning
     - from: 12pm
       to: 1pm
       tracks:

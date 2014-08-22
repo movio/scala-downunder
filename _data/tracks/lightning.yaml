@@ -1,0 +1,5 @@
+name: "Lightning Talks"
+type: other
+speakers:
+  - name: Anyone
+description: "This is a chance for everyone to present an interesting topic. These are strictly limited to 5 mins. You can speak on anything related to scala and/or software development. Due to the limited time frame it's best to focus on a single point that you wish to present. We have heaps of time so if you have a couple of good presentations, come prepared for both."

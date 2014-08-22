@@ -1,0 +1,7 @@
+name: "Slick for database access in Scala"
+type: person
+speakers:
+  - name: Michael Pollmeier
+    twitter: pollmeier
+    bio: 06-michael
+description: "Database access can be a pain in the butt or a very pleasant experience - much of this depends on the library you pick. I'll show how Slick works, the most popular one in Scala land - it is `mostly` a very pleasant experience ;)"
