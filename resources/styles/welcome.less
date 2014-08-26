@@ -13,6 +13,8 @@
     text-align: center;
     padding: @welcome-booking-padding;
     margin-top: @welcome-booking-padding;
+    position: relative;
+    overflow: hidden;
 
     p {
       text-align: center;
@@ -50,6 +52,29 @@
         display: inline-block;
         padding: @welcome-register-padding (5 * @welcome-register-padding);
       }
+
+      &[disabled], &[disabled]:hover {
+        color: @welcome-booking-color;
+        border-color: @welcome-booking-color;
+        background: transparent;
+        opacity: .4;
+      }
+    }
+
+    .soldout {
+      position: absolute;
+      top: 35%;
+      left: -50%;
+      font-weight: bold;
+      color: white;
+      // color: @welcome-booking-color-alt;
+      border-top: 5px solid @welcome-booking-color-alt;
+      border-bottom: 5px solid @welcome-booking-color-alt;
+      background-color: @welcome-booking-color-alt;
+      padding: 20px;
+      font-size: 2em;
+      width: 200%;
+      .rotate(-30deg);
     }
   }
 }
