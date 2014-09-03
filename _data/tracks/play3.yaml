@@ -1,0 +1,7 @@
+name: "Reactive Streams and Play 3.0"
+type: person
+speakers:
+  - name: James Roper
+    twitter: jroper
+    bio: 03-james
+description: "Reactive Streams has a lot to offer Play, providing an asynchronous streaming that is easy to use from both Java and Scala, and a common API to share between asynchronous streaming libraries on the JVM. Play 3.0 will be embracing this new standard as a base for its IO streaming, but what implications will this have on Play's architecture? What will happen to iteratees? How much will this impact existing Play applications? This presentation will dive deep into Play's architecture, and show just how reactive streams will be applied to and improve Play."

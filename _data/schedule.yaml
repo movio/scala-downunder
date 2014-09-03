@@ -55,14 +55,14 @@
         - tea
     - from: 4pm
       to: 5pm
-      photo: "/speakers/peter.jpg"
-      tracks:
-        - reactiveStreams
-    - from: 5pm
-      to: 6pm
       photo: "/speakers/paul.jpg"
       tracks:
         - crudPlay
+    - from: 5pm
+      to: 6pm
+      photo: "/speakers/james.jpeg"
+      tracks:
+        - play3
     - from: 6pm
       tracks:
         - drinks
