@@ -10,8 +10,9 @@
     text-align: center;
   }
 
-  a, .date {
+  .date {
     display: block;
+    margin-top: 10px;
   }
 
   a {
@@ -33,12 +34,24 @@
     width: 25px;
     display: inline;
     vertical-align: bottom;
-    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  a:first-child .banner-icon {
+    margin-left: 0;
   }
 
   @media (min-width: @screen-md-min) {
     a, .separator, .date {
       display: inline;
+    }
+
+    a:first-child .banner-icon {
+      margin-left: 20px;
+    }
+
+    .date {
+      margin-top: 0;
     }
   }
 }
