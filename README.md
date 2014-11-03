@@ -2,6 +2,12 @@
 
 Website at [http://scaladownunder.org](http://scaladownunder.org)
 
+## Get
+
+    git clone git@github.com:scala-downunder/scala-downunder.git
+    cd scala-downunder
+    git submodule update --init --recursive
+
 ## Requirements
 
 * NPM
