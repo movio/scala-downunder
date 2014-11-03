@@ -7,6 +7,7 @@ gulp.task('deploy', function() {
   global.isWatching = false;
   return gulp.src('', {read: false})
     .pipe($.shell([
+      'rm _site/resources/app.min*',
       'gulp build --no-watch',
       'jekyll build --future',
       'gulp usemin',
