@@ -1,7 +1,9 @@
 var sticky = require('sticky'),
     elements = require('./elements');
 
-elements.header.sticky({topSpacing:0});
+if (!elements.isSmall()) {
+  elements.header.sticky({topSpacing: 0});
+}
 
 function stickBanner() {
   if (elements.isSmall()) {
@@ -14,6 +16,8 @@ function stickBanner() {
 stickBanner();
 
 $(window).resize(function () {
-  elements.header.sticky('update');
+  if (!elements.isSmall()) {
+    elements.header.sticky('update');
+  }
   stickBanner();
 });

@@ -1,7 +1,7 @@
 body {
   color: @color;
   font-size: @font-size;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cantarell', sans-serif;
 }
 
 section {
@@ -11,8 +11,12 @@ section {
     text-align: center;
     text-transform: uppercase;
     font-size: @title-size;
-    margin: 0;
-    margin-bottom: @title-bottom;
+    margin: 0 0 @title-bottom;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    @media (max-width: @screen-sm-min) {
+      font-size: @title-size * 0.65;
+    }
   }
 }
 
@@ -43,7 +47,7 @@ ul.styled, ol.styled {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: @red;
   cursor: pointer;
 }
 
@@ -64,4 +68,10 @@ address {
 
 .light {
   font-weight: 300;
+}
+
+div.title-separator {
+  width: 150px;
+  border-bottom: 3px solid @red;
+  margin: auto auto @title-separator-bottom;
 }

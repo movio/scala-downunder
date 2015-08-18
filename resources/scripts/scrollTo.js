@@ -16,11 +16,16 @@ function offset() {
   return -1 * (stickyHeight - 2);
 }
 
-$('.header-link a', elements.header).on('click', function (e) {
-  var source = e.target || e.srcElement;
-  var destination = source.getAttribute('data-href');
 
-  if (elements[destination]) {
-    elements[destination].velocity('scroll', {duration: 750, offset: offset()});
-  }
+
+$('nav a', elements.header).on('click', function (e) {
+    var source = e.target || e.srcElement;
+    var destination = source.getAttribute('data-href');
+    if (elements[destination]) {
+        elements[destination].velocity('scroll', {duration: 750, offset: offset()});
+    }
+});
+
+$('#arrow-svg, #arrow-svg > *').on('click', function() {
+    elements['about'].velocity('scroll', {duration: 750, offset: offset()});
 });

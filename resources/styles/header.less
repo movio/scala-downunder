@@ -1,36 +1,79 @@
 .section-header {
+
+  .oval{
+    fill: none;
+    stroke: @header-fg; stroke-width: 2px;
+    transition: all 0.5s;
+  }
+
+  .icon-path {
+    fill: @header-fg;
+    transition: all 0.5s;
+  }
+
+  svg:hover .oval {
+    fill: @header-fg;
+    cursor: pointer;
+  }
+
+  svg:hover .icon-path {
+    fill: @header-bg;
+    cursor: pointer;
+  }
+
+  .nav-button {
+    display: inline-block;
+    transition: all 0.5s;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0 12px;
+    margin: 0 -2px 0 -2px;
+    background-color: @header-bg;
+    height: @header-height + 4px;
+    line-height: @header-height + 4px;
+    color: @header-fg;
+  }
+
+  .nav-button:hover {
+    background-color: @header-fg;
+    color: @header-bg;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
   background-color: @header-bg;
-  padding: (@header-padding / 2) 0;
   text-align: center;
+  text-transform: uppercase;
   width: 100%;
   z-index: 100;
+  border-bottom: @header-border-height solid @header-fg;
 
-  @media (min-width: @screen-sm-min) {
-    padding: @header-padding 0;
+  .icon {
+    display: inline-block;
+    height: @header-height - @header-border-height;
+    line-height: @header-height - @header-border-height;
+    padding: @header-icon-padding 0 @header-icon-padding 0;
   }
 
   .header-links {
-    .header-link {
-      display: inline;
-
-      a {
-        color: @header-link-color;
-        padding: @header-link-padding;
-        text-decoration: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: .65em;
-        .transition(color @transition-duration);
-
-        &:hover {
-          color: @header-link-color-hover;
-        }
-
-        @media (min-width: @screen-sm-min) {
-          font-size: 1em;
-          padding: @header-link-padding (2 * @header-link-padding);
-        }
-      }
+    display: inline-block;
+    vertical-align: top;
+    a {
+      .noselect;
     }
   }
+
+  @media (min-width: @screen-sm-min) {
+    .header-links {
+      margin-right: @header-links-icons-spacing;
+    }
+  }
+
+  .header-icons {
+    display: inline-block;
+  }
+
 }

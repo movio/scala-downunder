@@ -7,7 +7,6 @@
 @import "mixins";
 @import "flexbox";
 @import "global";
-@import "banner";
 @import "footer";
 @import "header";
 @import "location";
@@ -17,41 +16,46 @@
 @import "sponsors";
 @import "conduct";
 @import "welcome";
+@import "jobs";
+@import "call-for-papers";
 
 // COLORS
-@blue: #23BDC5;
+@blue: #63CED4;
 @blue-dark: #0F3659;
-@red: #F05938;
+@red: #F56038;
 
-@gray-white: #F1F1F1;
+@gray-white: #F3F4F4;
 @gray-light: #4F4F4F;
 @gray: #666666;
 @gray-dark: #353535;
 
 // GLOBAL
 @color: @gray;
-@font-size: 20px;
+@font-size: 15px;
 @transition-duration: 400ms;
-@container-max-width: 1000px;
+@container-max-width: 700px;
 @section-icon-size: 50px;
 @section-top: 60px;
 @section-padding: @font-size;
 @link-lighter: 20%;
 @title-size: 48px;
-@title-bottom: 40px;
+@title-bottom: 20px;
+@title-separator-bottom: 100px;
 
 // HEADER
-@header-bg: @gray-dark;
-@header-padding: 30px;
-@header-link-padding: 10px;
-@header-link-color: @gray;
-@header-link-color-hover: @red;
+@header-bg: @red;
+@header-fg: white;
+@header-height: 56px;
+@header-border-height: 2px;
+@header-links-icons-spacing: 40px;
+@header-icon-padding: 10px;
 
 // LOGO
 @logo-color: #fff;
-@logo-min-height: 500px;
+@logo-min-height-mobile: 650px;
+@logo-min-height: 800px;
 @logo-size: 300px;
-@logo-top: ((@logo-min-height - @logo-size) / 2 - @section-padding);
+@logo-top: 63px;
 
 // RED BANNER
 @banner-bg: @red;
@@ -119,6 +123,9 @@
 @sponsors-title-color: @red;
 @sponsors-padding: 1rem;
 
+// JOBS
+@jobs-title-color: @red;
+
 // CONTACT
 @contact-color: #fff;
 @contact-bg: @gray-dark;
@@ -132,3 +139,7 @@
 @screen-xs-max:              (@screen-sm-min - 1);
 @screen-sm-max:              (@screen-md-min - 1);
 @screen-md-max:              (@screen-lg-min - 1);
+
+// FOOTER
+@footer-padding: 20px;
+@footer-border-height: 2px;

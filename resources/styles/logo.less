@@ -2,14 +2,15 @@
   min-height: @logo-min-height;
   text-align: center;
   background-color: @blue;
-  background-image: url("./images/header-mobile.jpg");
+  background-image: url("./images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   padding: @section-padding;
 
-  @media (min-width: @screen-md-min) {
-    background-image: url("./images/header.jpg");
+  @media (max-width: @screen-sm-min) {
+    min-height: @logo-min-height-mobile;
+    background-image: url("./images/header-mobile.jpg");
   }
 
   .section-icon {
@@ -25,5 +26,80 @@
       height: @logo-size;
     }
   }
+
+  .section-text {
+   position: relative;
+    top: @logo-top + 30;
+  }
+
+  h1, p {
+    color: @logo-color;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  @media (max-width: @screen-sm-min) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    line-height: 10px;
+    font-weight: 500;
+  }
+
+  a {
+    border-bottom: solid 2px @logo-color;
+    display: inline;
+    color: @logo-color;
+  }
+
+  .arrow{
+    stroke: #FFF;
+    stroke-width:2px;
+  }
+
+  .arrow-div{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    top: @logo-top + 100;
+  }
+
+  .arrow-div:hover svg{
+    .animation(none);
+  }
+
+  .arrow-svg {
+    transition: all .3s;
+    display: block;
+    margin: 15px auto 0;
+    position :relative;
+    .animation(arrowmove 2.5s infinite);
+  }
+
+  .arrowmove-mixin {
+    0%   {top: -20px; opacity: 0;}
+    50%  {opacity: 1 }
+    100% {top: 30px; opacity: 0;}
+  }
+
+  @keyframes arrowmove { .arrowmove-mixin; }
+  @-webkit-keyframes arrowmove { .arrowmove-mixin; }
+  @-moz-keyframes arrowmove { .arrowmove-mixin; }
+  @-ms-keyframes arrowmove { .arrowmove-mixin; }
+  @-o-keyframes arrowmove { .arrowmove-mixin; }
 
 }

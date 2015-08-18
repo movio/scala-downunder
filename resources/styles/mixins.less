@@ -54,3 +54,20 @@
        -o-transform: rotateY(@degrees);
           transform: rotateY(@degrees);
 }
+
+.animation(@animation) {
+  animation: @animation;
+  -webkit-animation: @animation;
+  -moz-animation: @animation;
+  -ms-animation: @animation;
+  -o-animation: @animation;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

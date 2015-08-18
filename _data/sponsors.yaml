@@ -1,6 +1,10 @@
 - name: Movio
   logo: "logo-movio.png"
   link: "movio.co"
+  width: 124
+  height: 26
 - name: Typesafe
   logo: "logo-typesafe.png"
   link: "typesafe.com"
+  width: 186
+  height: 45
