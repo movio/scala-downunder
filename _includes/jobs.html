@@ -9,5 +9,17 @@
       });
     </script>
     <div id="whr_embed_hook"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var target = $('#whr_embed_hook');
+        var observer = new MutationObserver(function() {
+          target.find("> h2").filter(function() { return $.text([this]) !== 'Auckland, New Zealand'; }).remove();
+          target.find("ul").filter(function() { return $(this).find("h3:contains('Campaign Coordinator')").length !== 0; }).remove();
+          target.find("ul").filter(function() { return $(this).find("h3:contains('Account Manager EMEA')").length !== 0; }).remove();
+          target.find("ul").filter(function() { return $(this).find("h3:contains('Senior Account Manager - North America')").length !== 0; }).remove();
+        });
+        observer.observe(document.querySelector('#whr_embed_hook'), { attributes: true, childList: true, characterData: true });
+      });
+    </script>
   </div>
 </section>
