@@ -29,3 +29,7 @@ $('nav a', elements.header).on('click', function (e) {
 $('#arrow-svg, #arrow-svg > *').on('click', function() {
     elements['about'].velocity('scroll', {duration: 750, offset: offset()});
 });
+
+$('.section-logo #apply-here, .section-welcome #apply-now').on('click', function() {
+    elements['callforpapers'].velocity('scroll', {duration: 750, offset: offset()});
+});
