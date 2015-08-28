@@ -53,9 +53,9 @@
 
   .icon {
     display: inline-block;
-    height: @header-height - @header-border-height;
-    line-height: @header-height - @header-border-height;
-    padding: @header-icon-padding 0 @header-icon-padding 0;
+    height: @header-height - @header-border-height - 2 * @header-icon-padding;
+    line-height: @header-height - @header-border-height - 2 * @header-icon-padding;
+    margin: @header-icon-padding 0 @header-icon-padding 0;
   }
 
   .header-links {
@@ -74,6 +74,7 @@
 
   .header-icons {
     display: inline-block;
+    vertical-align: middle;
   }
 
 }
