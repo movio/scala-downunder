@@ -8,6 +8,7 @@ gulp.task('serve', function () {
     },
     port: 9000,
     open: false,
-    notify: false
+    notify: false,
+    ghostMode: false
   });
 });
