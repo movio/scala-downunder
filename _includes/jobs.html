@@ -13,10 +13,14 @@
       document.addEventListener("DOMContentLoaded", function() {
         var target = $('#whr_embed_hook');
         var observer = new MutationObserver(function() {
+          // remove non-NZ region headers
           target.find("> h2").filter(function() { return $.text([this]) !== 'Auckland, New Zealand'; }).remove();
+          // remove non-NZ region contents
           target.find("ul").filter(function() { return $(this).find("h3:contains('Campaign Coordinator')").length !== 0; }).remove();
           target.find("ul").filter(function() { return $(this).find("h3:contains('Account Manager EMEA')").length !== 0; }).remove();
           target.find("ul").filter(function() { return $(this).find("h3:contains('Senior Account Manager - North America')").length !== 0; }).remove();
+          // remove non-dev NZ jobs
+          target.find("h3:contains('Support Manager')").remove();
         });
         observer.observe(document.querySelector('#whr_embed_hook'), { attributes: true, childList: true, characterData: true });
       });
