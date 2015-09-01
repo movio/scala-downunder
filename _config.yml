@@ -1,6 +1,6 @@
 # Site settings
 title: Scala Downunder
-description: "Scala Downunder Conference"
+description: "Scala Downunder brings together the Scala Australasian community offering a program of keynote presentations, expert guest speakers, and informal networking with fellow developers."
 baseurl: ""
 url: "scaladownunder.org"
 future: false
