@@ -12,6 +12,19 @@
       <meta name="msapplication-tap-highlight" content="no"/>
       <meta name="description" content="{{ site.description }}">
 
+      <!-- Open Graph data -->
+      <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="scaladownunder.org" />
+      <meta property="og:image" content="images/sdu-opengraph.png" />
+      <meta property="og:description" content="{{ site.description }}" />
+      <meta property="og:site_name" content="Scala Downunder" />
+
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@ScalaDownunder">
+      <meta name="twitter:creator" content="@ScalaDownunder">
+
       <link href="favicon.png" rel="shortcut icon" type="image/png">
       <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
